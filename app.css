@@ -1,0 +1,392 @@
+#metro-interactive{
+  padding:1rem 1rem;
+}
+
+#metro-interactive svg{overflow:visible;}
+
+#metro-interactive div.padded{padding:0rem 1rem;}
+#metro-interactive div.padded2{padding:0rem 1rem;}
+
+/*use border-box on div containers*/
+#metro-interactive div{
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+#metro-interactive .col-center{
+	margin:0em auto;
+  padding:0rem 4rem;
+	max-width: 800px;
+	min-width: 300px;
+}
+
+#metro-interactive .col-left{
+  margin:1rem 4rem;
+  max-width:780px;
+}
+
+#metro-interactive .col-left.fill-remaining{
+  max-width:none;
+}
+
+
+/*links*/
+#metro-interactive a{
+  border-bottom: 1px dotted #dc2a2a;
+  color: #dc2a2a;
+  text-decoration:none;
+}
+
+#metro-interactive a:hover{
+  border-bottom: 1px solid #dc2a2a;
+}
+
+#metro-interactive a.blue-link{
+  border-bottom: 0px dotted #0d73d6;
+  color: #0d73d6;
+  text-decoration:none;
+  cursor:pointer;
+}
+
+#metro-interactive a.blue-link:hover{
+  border-bottom: 1px solid #0d73d6;
+}
+
+/*for unobtrusive links within document*/
+#metro-interactive a.jump-link{
+  border-bottom: none;
+  color: #101010;
+  text-decoration:none;
+  display:block;
+}
+
+#metro-interactive a.jump-link:hover{
+  border-bottom: none;
+}
+
+#metro-interactive a.mpp-report-link:after{
+  content:" »";
+}
+
+/*text*/
+/*by default, match site styling*/
+#metro-interactive p, #metro-interactive li, #metro-interactive select{
+  font-family:"PT Serif", Times, serif;
+  margin:0em 0em 1em 0em;
+  color: #111111;
+  line-height:1.75em;
+}
+
+#metro-interactive text{
+  font-size:1rem;
+  font-family:"PT Serif", Times, serif;
+  fill: #111111;
+  user-select:none;
+}
+
+/*three levels of titles*/
+/*1 - big, section separator*/
+#metro-interactive div.section-title-mpp{
+  margin:4rem 0em 3rem 0em;
+  padding: 1rem 1rem 1rem 1rem;
+  border-bottom: 1px solid #aaaaaa;
+}
+#metro-interactive div.section-title-mpp.no-border{border-bottom:none;}
+#metro-interactive div.section-title-mpp > p:first-child{
+  font-weight:bold;
+  font-size:2rem;
+}
+#metro-interactive div.section-title-mpp > p{
+  max-width:1200px;
+  text-align:center;
+  line-height:1.5em;
+  margin:0em auto;
+}
+
+/*2 - bold item title -- usually chart*/
+#metro-interactive p.chart-title{
+  font-size:1.35em;
+  font-weight:bold;
+  margin:0rem 0rem 1rem 0rem;
+}
+
+/*3 - subtitle*/
+#metro-interactive p.chart-subtitle{
+  font-size:1.15em;
+  margin:-1rem 0rem 1rem 0rem;
+}
+
+#metro-interactive .makesans p, #metro-interactive .makesans text, #metro-interactive .makesans li{
+  font-family: franklin-gothic-urw, arial, helvetica, sans-serif;
+}
+
+#metro-interactive ul li{
+  padding-left:1rem;
+}
+
+#metro-interactive .notes-box p{
+  color:#555555;
+  margin:0.5rem 0rem 0.5rem 0rem;
+  line-height: normal;
+  font-style:italic;
+}
+
+#metro-interactive p.single-spaced{
+  line-height: 1.33em;
+}
+
+#metro-interactive .tight-text *, #metro-interactive .tight-text{
+  line-height: 1.33em;
+  margin: 0.5rem 0rem;
+  font-size:0.85rem;
+}
+
+#metro-interactive .first-letter{
+  font-size:5em;
+  margin:0em 0.1em 0em 0em;
+  color:#dc2a2a;
+}
+
+/*do not use icon as this clases with site styling*/
+#metro-interactive .ico-and-text{
+  margin:0rem 0rem 1rem 0rem;
+  padding:0px;
+}
+
+#metro-interactive .ico-and-text > img{
+  display:inline-block;
+  max-height:2.5rem;
+  width:auto;
+  margin:0rem 5px 0rem 0rem;
+  vertical-align:middle;
+}
+
+#metro-interactive .ico-and-text > p{
+  display:inline-block;
+  margin:0rem 0rem 0rem 0rem !important;
+  line-height:1em;
+  vertical-align:middle;
+}
+
+#metro-interactive .no-select, #metro-interactive .no-select *{
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select:none;
+  user-select: none; 
+  pointer-events:none; 
+}
+
+/*to do: re-work image wrap*/;
+#metro-interactive div.image-wrap{
+  position:relative;
+  border: 1px solid #aaaaaa;
+  border-radius:5px;
+  padding:5px 0px;
+  background-color:#ffffff;
+  background:#ffffff;
+}
+
+#metro-interactive div.image-wrap img{
+  display:block;
+  width:100%;
+  height:auto;
+}
+
+#metro-interactive div.image-wrap p{
+  border-bottom: 1px solid #aaaaaa;
+  margin:0rem;
+  padding:0.5em 2rem 0.5em 2rem;
+}
+
+/*images are sized according to container they are in*/
+#metro-interactive img {
+  width:100%;
+  height:auto;
+}
+
+#metro-interactive .map-legend text{
+  fill:#555555;
+}
+
+
+/*Grid*/
+#metro-interactive .grid-wrap{
+  display:table;
+  table-layout:fixed;
+  width:100%;
+  border-spacing: 0rem 0rem;
+  margin:0rem 0rem 1rem 0rem;
+  position:relative;
+  z-index:0;
+}
+
+#metro-interactive .grid-wrap .grid-row{
+  display:table-row;
+}
+
+#metro-interactive .grid-wrap .grid-row .grid-cell{
+  display:table-cell;
+  padding:0rem 1rem 1rem 1rem;
+  margin-bottom:1rem;
+  position:relative;
+  vertical-align:top;
+}
+
+#metro-interactive .grid-wrap .grid-row .grid-cell .grid-cell-title{
+  color:#dc2a2a;
+  font-weight:bold;
+  font-size:1.15rem;
+  line-height:1rem;
+  margin:0rem 0rem 1rem 0rem;
+}
+
+#metro-interactive .grid-wrap.with-borders .grid-row .grid-cell:before{
+  content:"";
+  border-top:1px solid #aaaaaa;
+  width:90%;
+  width: calc(100% - 2rem);
+  height:1px;
+  left:1rem;
+  top:0px;
+  display:block;
+  position:absolute;
+}
+
+#metro-interactive .grid-wrap.with-borders .grid-row .grid-cell:after{
+  content:"";
+  background-color:#aaaaaa;
+  width:1em;
+  height:1px;
+  left:0.18rem;
+  top:0.35em;
+  display:block;
+  position:absolute;
+
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+
+/*responsive styles*/
+@media (min-width:0px){
+
+  #metro-interactive .grid-wrap .grid-row .grid-cell{
+    width:100%;
+    display:block;
+    padding:0rem 1rem;
+  }
+
+  #metro-interactive .grid-wrap.with-borders .grid-row .grid-cell{padding: 1rem 1.5rem 1rem 1.5rem;}  
+
+  #metro-interactive div.section-title-mpp{margin-top:2rem;}
+  #metro-interactive div.section-title-mpp > p{text-align:left;}
+  #metro-interactive div.col-center{padding:0rem 1rem;}
+
+  #metro-interactive .col-left{
+    margin:1rem 1rem;
+    max-width:780px;
+  }
+}
+
+@media (min-width:600px){
+
+  #metro-interactive .col-left{
+    margin:1rem 5rem;
+    max-width:780px;
+  }
+
+}
+
+/*note: grid.js module uses this as a matchMedia breakpoint;*/
+@media (min-width:950px){
+
+  #metro-interactive .grid-wrap.with-borders{margin-left:-0.5rem;}
+  #metro-interactive .grid-wrap .grid-row .grid-cell{padding:0rem 2rem 1rem 0rem; display:table-cell;}
+  #metro-interactive .grid-wrap.with-borders .grid-row .grid-cell{padding: 1rem 1.5rem 1rem 1.5rem;}
+
+  #metro-interactive .grid-wrap .grid-row.three-cells .grid-cell{width:33%;} 
+
+  #metro-interactive .grid-wrap .grid-row.two-one .grid-cell{width:40%;}  
+  #metro-interactive .grid-wrap .grid-row.two-one .grid-cell:first-child{width:60%;}
+
+  #metro-interactive .grid-wrap .grid-row.one-two .grid-cell{width:60%;}   
+  #metro-interactive .grid-wrap .grid-row.one-two .grid-cell:first-child{width:40%;}    
+
+  #metro-interactive .grid-wrap .grid-row.one-three .grid-cell{width:75%;}   
+  #metro-interactive .grid-wrap .grid-row.one-three .grid-cell:first-child{width:25%;}    
+
+  #metro-interactive div.section-title-mpp{margin-top:4rem;}
+  #metro-interactive div.section-title-mpp > p{text-align:center;}
+  #metro-interactive div.col-center{padding:0rem 4rem;}
+}
+
+
+@media (min-width:1240px){
+
+}
+
+
+/*clearfix*/
+.c-fix:after{
+  content:""; 
+  display:table; 
+  clear:both;
+}
+
+
+/*findings-driven map container*/
+#metro-interactive .map-container{
+  padding:0rem 1rem;
+  width:100%;
+}
+
+#metro-interactive .map-container .button-panel{
+  border:1px solid #dc2a2a;
+  border-width:1px 1px 0px 1px;
+  display:table-row;
+}
+
+#metro-interactive .map-container .button-panel > div{
+  display: table-cell;
+  vertical-align: bottom;
+  width: 160px;
+  min-height: 50px;
+  padding: 1rem;
+  cursor: pointer;
+  border: 1px solid #dc2a2a;
+  border-width:0px 0px 0px 1px;
+  width:25%;
+}
+
+#metro-interactive .map-container .button-panel > div:first-child{
+  border-width:0px 0px 0px 0px;
+}
+
+#metro-interactive .map-container .button-panel > div.selected{
+  background-color:#dc2a2a;
+}
+
+#metro-interactive .map-container .button-panel > div.selected p{
+  color:#ffffff;
+}
+
+#metro-interactive .map-container .button-panel p{
+  user-select:none;
+  margin:0rem;
+  line-height:1.33em;
+}
+
+#metro-interactive .map-container .finding-panel{
+  width: 30%;
+  float:left;
+  padding:1rem;
+}
+
+#metro-interactive .map-container .map-panel{
+  width: 70%;
+  min-height:320px;
+  float:left;
+  padding:1rem;
+}
