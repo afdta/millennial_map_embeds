@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="375" width="700" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 700 375">
+    <defs>
+        <marker id="marker4969" refY="0.0" refX="0.0" orient="auto" overflow="visible">
+            <path d="m0 0l5-5-17.5 5 17.5 5-5-5z" fill-rule="evenodd" transform="scale(.8) rotate(180) translate(12.5)" stroke="#0cf" stroke-width="1pt" fill="#0cf"/>
+        </marker>
+        <marker id="Arrow1Lend" refY="0.0" refX="0.0" orient="auto" overflow="visible">
+            <path d="m0 0l5-5-17.5 5 17.5 5-5-5z" fill-rule="evenodd" transform="scale(.8) rotate(180) translate(12.5)" stroke="#55d400" stroke-width="1pt" fill="#55d400"/>
+        </marker>
+    </defs>
+    <metadata>
+        <rdf:RDF>
+            <cc:Work rdf:about="">
+                <dc:format>image/svg+xml</dc:format>
+                <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                <dc:title/>
+            </cc:Work>
+        </rdf:RDF>
+    </metadata>
+    <g transform="translate(0,-705)">
+        <path marker-end="url(#marker4969)" d="m217.65 865.89 329.8 57.706" stroke="#0cf" stroke-width="1px" fill="none"/>
+        <g>
+            <path marker-end="url(#Arrow1Lend)" d="m218.88 933.46 328.79 22.057" stroke="#55d400" stroke-width="1px" fill="#55d400"/>
+            <circle cx="218.9" cy="866.48" r="8.4524" fill="#0cf"/>
+            <g font-size="20px" font-family="&apos;liberation sans&apos;">
+                <text style="font-variant-ligatures:normal;letter-spacing:0px;font-variant-numeric:normal;word-spacing:0px;font-variant-caps:normal;font-feature-settings:normal" xml:space="preserve" line-height="25px" y="835.89062" x="196.55629" fill="#808080"><tspan x="196.55629" y="835.89062">2015</tspan></text>
+                <text style="font-variant-ligatures:normal;letter-spacing:0px;font-variant-numeric:normal;word-spacing:0px;font-variant-caps:normal;font-feature-settings:normal" xml:space="preserve" line-height="25px" y="938.33331" x="1177.7778" fill="#000000"><tspan x="1177.7778" y="956.34839"/></text>
+                <text style="font-variant-ligatures:normal;letter-spacing:0px;font-variant-numeric:normal;word-spacing:0px;font-variant-caps:normal;font-feature-settings:normal" xml:space="preserve" line-height="25px" y="835.89062" x="545.20605" fill="#808080"><tspan x="545.20605" y="835.89062">2035</tspan></text>
+            </g>
+            <circle cx="218.9" cy="933.88" r="8.4524" fill="#55d400"/>
+        </g>
+        <path d="m64.131 823.11v240.39" stroke="#000" stroke-width="1px" fill="none"/>
+        <g>
+            <g font-size="20px" font-family="&apos;liberation sans&apos;">
+                <text style="font-variant-ligatures:normal;letter-spacing:0px;font-variant-numeric:normal;word-spacing:0px;font-variant-caps:normal;font-feature-settings:normal" xml:space="preserve" line-height="25px" y="945.19061" x="16.572762" fill="#808080"><tspan x="16.572762" y="945.19061">50%</tspan></text>
+                <text style="font-variant-ligatures:normal;letter-spacing:0px;font-variant-numeric:normal;word-spacing:0px;font-variant-caps:normal;font-feature-settings:normal" xml:space="preserve" line-height="25px" y="851.16638" x="16.572762" fill="#808080"><tspan x="16.572762" y="851.16638">75%</tspan></text>
+                <text style="font-variant-ligatures:normal;letter-spacing:0px;font-variant-numeric:normal;word-spacing:0px;font-variant-caps:normal;font-feature-settings:normal" font-weight="bold" xml:space="preserve" line-height="25px" y="731.36517" x="11.345641" fill="#000000"><tspan x="11.345641" y="731.36517">Share of the U.S. population that is white, </tspan><tspan x="11.345641" y="756.36517">2015 and 2035</tspan></text>
+            </g>
+            <circle cx="238.2" cy="778.99" r="8.4524" fill="#0cf"/>
+            <circle cx="376.41" cy="778.99" r="8.4524" fill="#55d400"/>
+            <text style="font-variant-ligatures:normal;letter-spacing:0px;font-variant-numeric:normal;word-spacing:0px;font-variant-caps:normal;font-feature-settings:normal" xml:space="preserve" font-size="20px" line-height="25px" y="785.87183" x="258.04559" font-family="&apos;liberation sans&apos;" fill="#000000"><tspan x="258.04559" y="785.87183">Over 35</tspan></text>
+            <text style="font-variant-ligatures:normal;letter-spacing:0px;font-variant-numeric:normal;word-spacing:0px;font-variant-caps:normal;font-feature-settings:normal" xml:space="preserve" font-size="20px" line-height="25px" y="786.1355" x="397.453" font-family="&apos;liberation sans&apos;" fill="#000000"><tspan x="397.453" y="786.1355">Under 18</tspan></text>
+            <circle cx="563.63" cy="924.79" r="8.4524" fill="#0cf"/>
+            <circle cx="563.63" cy="955.46" r="8.4524" fill="#55d400"/>
+        </g>
+        <path d="m204.96 866.88s-2.5877 5.433-3.2023 8.3499c-1.0275 4.8758 0.13328 12.112-0.73457 14.931-1.3994 4.5453-6.0631 7.7707-6.0631 7.7707s4.884 3.9558 6.3352 8.0624c1.2075 3.4171-2.0786 12.961-0.82951 19.267 0.69207 3.4936 4.4944 9.6933 4.4944 9.6933" stroke="#666" stroke-width="1px" fill="none"/>
+        <g font-size="20px" font-family="&apos;liberation sans&apos;">
+            <text style="font-variant-ligatures:normal;letter-spacing:0px;font-variant-numeric:normal;word-spacing:0px;font-variant-caps:normal;font-feature-settings:normal" xml:space="preserve" line-height="25px" y="894.34711" x="210.1559" fill="#00ccff"><tspan x="210.1559" y="894.34711">68%</tspan></text>
+            <text style="font-variant-ligatures:normal;letter-spacing:0px;font-variant-numeric:normal;word-spacing:0px;font-variant-caps:normal;font-feature-settings:normal" xml:space="preserve" line-height="25px" y="961.198" x="210.37074" fill="#55d400"><tspan x="210.37074" y="961.198">52%</tspan></text>
+            <text style="font-variant-ligatures:normal;letter-spacing:0px;font-variant-numeric:normal;text-anchor:end;word-spacing:0px;font-variant-caps:normal;font-feature-settings:normal;text-align:end" xml:space="preserve" line-height="25px" y="883.59863" x="187.4346" fill="#000000"><tspan x="187.4346" y="883.59863">Cultural</tspan><tspan x="187.4346" y="908.59863">generation</tspan><tspan x="187.4346" y="933.59863">gap: 16%</tspan></text>
+            <text style="font-variant-ligatures:normal;letter-spacing:0px;font-variant-numeric:normal;word-spacing:0px;font-variant-caps:normal;font-feature-settings:normal" xml:space="preserve" line-height="25px" y="1039.1709" x="16.572762" fill="#808080"><tspan x="16.572762" y="1039.1709">25%</tspan></text>
+        </g>
+    </g>
+</svg>

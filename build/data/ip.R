@@ -7,14 +7,26 @@ pop <- read_xls("/home/alec/Projects/Brookings/millenials/build/data/Millennial 
                 sheet="BGTable A", range="B10:H109", col_names=FALSE)[seq(1,7,2)]
 names(pop) <- c("Metro", "MPop15", "MShare15", "YAGrowth1015")
 
-pop$Metro <- gsub("--", "-", pop$Metro)
+pop$Metro <- sub("Nashville-Davidson--Murfreesboro--Franklin, TN", "Nashville-Davidson-Murfreesboro-Franklin, TN", pop$Metro)
+
+race <- read_xls("/home/alec/Projects/Brookings/millenials/build/data/Millennial Report_Appendices nw.xls", 
+                 sheet="BGTable C", range="B10:J109", col_names=FALSE)[c(1,3:9)]
+names(race) <- c("Metro", "White", "Black", "AIAN", "Asian", "TwoPlus", "Hispanic", "RTot")
+
+edu <- read_xls("/home/alec/Projects/Brookings/millenials/build/data/Millennial Report_Appendices nw.xls", 
+                sheet="BGTable E", range="B9:J108", col_names=FALSE)[c(1,3:7,9)]
+names(edu) <- c("Metro", "LTHS", "HS", "SC", "BA", "ETot", "Pov")
+
+
+merged <- full_join(pop, full_join(race, edu))
+merged$Metro <- gsub("--", "-", merged$Metro)
 
 mets <- metropops()[1:2]
 
 mets$CBSA_Title <- gsub("--", "-", mets$CBSA_Title)
 
-pop2 <- inner_join(mets, pop, by=c("CBSA_Title"="Metro"))
+metro_data <- inner_join(mets, merged, by=c("CBSA_Title"="Metro"))
 
-json <- toJSON(pop2, digits=5, na="null")
+json <- toJSON(metro_data, digits=5, na="null")
 
 write_lines(json, "/home/alec/Projects/Brookings/millenials/assets/millenials_data.json")
