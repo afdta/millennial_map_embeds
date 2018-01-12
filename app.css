@@ -230,7 +230,7 @@
   padding:0rem 1rem 1rem 1rem;
   margin-bottom:1rem;
   position:relative;
-  vertical-align:top;
+  vertical-align:middle;
 }
 
 #metro-interactive .grid-wrap .grid-row .grid-cell .grid-cell-title{
@@ -355,7 +355,7 @@
   vertical-align: bottom;
   padding: 10px;
   cursor: pointer;
-  border: 0px solid #dc2a2a;
+  border: 1px solid #ffffff;
   border-radius:0px;
   float:left;
   width:18%;
@@ -367,8 +367,9 @@
 }
 
 #metro-interactive .map-container .button-panel > div.selected{
-  background-color:#dc2a2a;
-  border-radius:5px;
+  background-color:#555555;
+  border-color:#555555;
+  border-radius:0px;
 }
 
 #metro-interactive .map-container .button-panel > div.selected p{

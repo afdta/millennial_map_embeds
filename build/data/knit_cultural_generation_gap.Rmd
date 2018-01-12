@@ -1,0 +1,66 @@
+---
+title: "Cultural generation gap sketches"
+output:
+  html_document: default
+  word_document: default
+date: "January 11, 2018"
+---
+
+```{r setup, echo=FALSE, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, fig.width=12, fig.height=9)
+source("~/Projects/Brookings/millenials/build/data/cultural_generation_gap.R")
+```
+
+## Overview
+
+Based on our meeting yesterday, I heard three messages that we needed to convey: 
+
+1. Define the idea of a cultural generation gap: the pre-millennials (those ages 35+) are substantially more white than the post-millennials (under 18).
+2. The millennials "bridge" this gap, merely by being part way between the pre-millennials and the post-millennials.
+3. The millennials will continue to bridge this gap in the future
+
+Bill, can you weigh in on whether these are on the mark?
+
+
+
+## Option 1
+
+Here's a chart that accomplishes the above (and which Bill showed yesterday). The percentages reference the share of each generation by race/ethnicity (e.g. in 2015 Asians and Others are 7.2% of the Pre-millennial cohort).  
+
+```{r faceted, echo=FALSE}
+ggplot(bound2, aes(group=race, x=gen, y=within_gen_share)) + geom_col(aes(fill=race)) +  
+  geom_text(aes(label=paste0(round(within_gen_share,1),"%"), vjust=1), position="stack", colour="#444444") +
+  facet_wrap(c("year"), nrow=1) + scale_fill_manual(values=c("#70ad47", "#ffc000", "#2fc4f2", "#b2b2b2")) +
+  labs(x="Generation", y="Share of generation")
+```
+
+I think the general perception of this will be that the percentages don't change drastically over time so there may be some confusion as to what this is trying to show. Do we care much about the relatively small changes in the distribution of each cohort over time?
+
+
+
+#Option 2
+
+Of course, the post-millennial group will be very large by 2035. So I found myself most interested in how the current race/ethnicity breakdown of the post-millennials (the under 18 cohort) will change the overall distribution of the population by 2035. So here's that graphic. Note that I've labeled the individual generation slices here for reference, but I'd ultimately remove them, I think.
+
+```{r unfaceted, echo=FALSE}
+ggplot(bound3, aes(group=race, x=year, y=share)) + geom_col(aes(fill=race), colour="#ffffff") + 
+  geom_text(aes(label=paste0(round(share*100,1),"% (", gen, ")"), group=race, vjust=1, hjust=0.5), position="stack", colour="#444444") +
+  scale_fill_manual(values=c("#70ad47", "#ffc000", "#2fc4f2", "#b2b2b2")) +
+  scale_x_continuous(breaks=c(2015, 2025, 2035)) + 
+  labs(x="Year", y="Share of total population")
+```
+
+
+#Option 3
+
+Or we could do something similar to option 1, but use absolute values (which I think is what your growing pie chart suggestion got at yesterday). It's a little harder to see what's going on with the distribution, but you get a good sense for the magnitude of the change.
+
+```{r faceted2, echo=FALSE}
+ggplot(bound3, aes(group=race, x=gen, y=gen_pop/1000000)) + geom_col(aes(fill=race), colour="#ffffff") + 
+  geom_text(aes(label=round(gen_pop/1000000,1), group=race, vjust=1), position="stack", colour="#444444") +
+  facet_wrap(c("year"), nrow=1) + scale_fill_manual(values=c("#70ad47", "#ffc000", "#2fc4f2", "#b2b2b2")) +
+  labs(x="Generation", y="Size (millions)")
+```
+
+Thoughts?
+

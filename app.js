@@ -1875,11 +1875,18 @@ function legend(container){
 		var padding = 8;
 
 		var format = typeof formatter == "function" ? formatter : function(v){return v};
-		var L = arguments.length > 3 && !!left;
+		
+		if(arguments.length > 3){
+			var L = left.toLowerCase() == "left" ? "left" : "right";
+		}
+		else{
+			var L = "none";
+		}
+		
 
 		inner_wrap.selectAll("div.bubble-legend").remove();
 		var wrap = inner_wrap.append("div").classed("bubble-legend", true)
-							 .style("float", L ? "left" : "right")
+							 .style("float", L)
 							 .style("margin","0em " + (L ? "2em" : "0em") + " 0em " + (L ? "0em" : "2em"));
 
 		var svg = wrap.append("svg").style("overflow","visible");
@@ -1950,20 +1957,27 @@ function legend(container){
 		var padding = 12;
 
 		var format = typeof formatter == "function" ? formatter : function(v){return v};
-		var L = arguments.length > 3 && !!left;
+
+		if(arguments.length > 3){
+			var L = left.toLowerCase() == "left" ? "left" : "right";
+		}
+		else{
+			var L = "none";
+		}
 
 		inner_wrap.selectAll("div.swatch-legend").remove();
 		var wrap = inner_wrap.append("div").classed("c-fix swatch-legend", true)
-							 .style("float", L ? "left" : "right")
+							 .style("float", L)
 							 .style("margin","0em " + (L ? "2em" : "0em") + " 0em " + (L ? "0em" : "2em"));
 
-		var svg = wrap.append("svg");
+		var svgwrap = wrap.append("div").style("margin","0rem auto");
+		var svg = svgwrap.append("svg").attr("width","100%").attr("height","100%");
 		var g = svg.append("g").attr("transform","translate(0,25)");
 
 		var s_height = 15;
 		var s_width = 35;
 
-		svg.attr("height", 2*s_height + 2*padding + 25);
+		svgwrap.style("height", (2*s_height + 2*padding + 25)+"px");
 
 		if(landscape){
 
@@ -2005,7 +2019,7 @@ function legend(container){
 					var w = box.right - box.left;
 					var w1 = box1.right - box1.left;
 					var h = box.bottom-box.top+box1.bottom-box1.top+10;
-					svg.attr("width", Math.max(w1,w)).attr("height",h);
+					svgwrap.style("width", Math.max(w1,w)+"px").style("height",h+"px");
 				},0);
 
 			},0);		
@@ -2091,7 +2105,8 @@ function mapd(root_container){
 	var container_wrap = dom_root.append("div")
 								  .style("width","100%")
 								  .style("min-height","150px")
-								  .style("padding","0px");
+								  .style("padding","0px")
+								  .classed("map_container_wrap", true);
 
 	//container_wrap node
 	var container = container_wrap.node();
@@ -2318,7 +2333,7 @@ function mapd(root_container){
 		
 		//get dimensions of container -- how wide is it?
 		var new_dim = get_dim(container);
-		
+
 		//console.log(aspect);
 		if(aspect <= 1){
 			new_dim.height = aspect*new_dim.width;
@@ -2327,9 +2342,9 @@ function mapd(root_container){
 			new_dim.height = new_dim.viewport_height;
 		}
 
-		//HEIGHT OVERRIDES
+		//HEIGHT OVERRIDES -- THESE ARE BUGGY (UNNECESSARY?) -- TO DO: Eliminate auto layout
 		//enforce height restriction #1 -- map can't be taller than viewport
-		if(new_dim.height > new_dim.viewport_height){
+		/*if(new_dim.height > new_dim.viewport_height){
 			new_dim.height = new_dim.viewport_height;
 		}
 
@@ -2349,7 +2364,7 @@ function mapd(root_container){
 		}
 		catch(e){
 			new_dim.height = new_dim.viewport_height;
-		}		
+		}*/		
 
 		var height_diff = dimensions==null ? new_dim.height : new_dim.height - dimensions.height;
 		var width_diff = dimensions==null ? new_dim.width : new_dim.width - dimensions.width;
@@ -2375,7 +2390,7 @@ function mapd(root_container){
 
 	//PROJECTION
 	//store projection in private var; default will be set with map.projection(null)
-	var projection = d3.geoAlbersUsa();
+	var projection = null;
 
 	//construct a default AlbersUsa projection based on dimensions of container -- mutates the private projection variable used elsewhere
 	var default_projection = function(){
@@ -2438,7 +2453,6 @@ function mapd(root_container){
 
 				//track the aspect ratio of the map
 				aspect = Math.abs(bboxHeight/bboxWidth); //max lat becomes min due to svg coords
-
 				//track how the projected bounding box changes in size
 				//if(map_bounds==null){map_bounds = bounds}
 				//scale_change = [bounds[1][0]-map_bounds[1][0], bounds[1][1]-map_bounds[1][1]];
@@ -2448,7 +2462,6 @@ function mapd(root_container){
 				//scale_change = [1, 1];
 				console.log(e);
 			}
-
 		}
 		else{
 			//console.log("no bounds set");
@@ -2459,9 +2472,6 @@ function mapd(root_container){
 
 		return map;
 	};
-
-	//initialize the default projection
-	map.projection(null); 
 
 	//dragging and zooming behavior
 
@@ -2569,12 +2579,16 @@ function mapd(root_container){
 
 	//draw all layers
 	map.draw = function(resize_only, force){
-		//console.log("draw");
+
+		//set the default projection if it hasn't been set otherwise
+		if(projection===null){
+			map.projection(projection);
+		}
+
 		//before drawing set dimensions
-		//console.log(aspect);
 		var dimensions_changed = map.set_dim().changed;
 		//console.log("Have dimensions changed since last draw? " + (dimensions_changed ? "Yes" : "No"));
-
+		
 		//rescale projection, if necessary
 		//currently scale is set by first layer in the map -- projections are fit to it
 		//if the user wants to handle responsive projection then they should not make the map responsive
@@ -2841,19 +2855,22 @@ function main(){
 
         var map_wrap = d3.select(".map-container .map-panel");
 
+
         var map = mapd(map_wrap.append("div").node()).zoomable(true).responsive(true).zoomLevels(2);
         var state_layer = map.layer().geo(map.geo("state")).attr("stroke","#999999").attr("fill","none");
         var metro_layer = map.layer().geo(map.geo("metro").filter(function(d){return d.t100==1}))
                               .attr("stroke","#999999").attr("fill-opacity","0.9").data(data, "CBSA_Code");  
 
         //render map to div below map
-        var legend_wrap = map_wrap.append("div").style("margin","0.5rem 2rem 0.25rem 2rem").classed("map-legend",true);
-        map.legend.wrap(legend_wrap.node());  
+        var legend_wrap = map_wrap.append("div").style("margin","0.5rem auto 0.25rem auto").classed("c-fix",true)
+                                  .append("div").style("float","right").style("border-top","1px solid #aaaaaa")
+                                  .style("padding","10px").classed("map-legend",true); 
+        map.legend.wrap(legend_wrap.node()); 
                               
         var map_scenes = {
           "pop":{
               var:"MShare15",
-              varname:"Millenials share of total population, 2015",
+              varname:"Millennials share of total population, 2015",
               text:["Among metropolitan areas, the 15 metropolitan areas with the highest shares of millennials are all in the fast-growing South and West, such as Austin, Colorado Springs, San Diego, and Los Angeles.", "The lowest millennial shares tend to be in Florida, such as Tampa and Miami, in the Northeast, such as Pittsburgh, and in the Midwest, such as Cleveland and Detroit."
               ],
               draw: function(){
@@ -2861,7 +2878,7 @@ function main(){
                 //var r = metro_layer.aes.r("MPop15").radii(0,30);     
                 map.legend.swatch(fill.ticks(), function(v){
                   return format.num0(v[0]) + "% to " + format.num0(v[1]) + "%";
-                }, "Millenial share of the population, 2015");  
+                }, "Millennial share of the population, 2015");  
                 //map.legend.bubble(r.ticks([100000, 500000, 1000000]), format.num0, "Number of Millenials, 2015");
                 //tooltip  
 
@@ -2942,9 +2959,17 @@ function main(){
         var sharerank = format.ranker(data.map(function(d){return d.MShare15}));
 
         var tooltip = function(obs){
+          var tip = d3.select(this);
+
+          var svg = tip.selectAll("svg").data([obs]);
+          svg.exit().remove();
+
+          var bars = svg.enter().append("svg").attr("width","100%").attr("height","300px").merge(svg)
+                        .selectAll();
+
           var tip = d3.select(this); 
           tip.html('<div class="tight-text"> <p><strong>' + obs.CBSA_Title + '</strong></p>' + 
-                 '<p>In 2015, ' + format.num0(obs.MPop15) + ' Millenials lived in the metro area (' + poprank(obs.MPop15) + '), accounting for ' + 
+                 '<p>In 2015, ' + format.num0(obs.MPop15) + ' Millennials lived in the metro area (' + poprank(obs.MPop15) + '), accounting for ' + 
                                   format.num1(obs.MShare15) + '%  of all residents (' + sharerank(obs.MShare15) + ')</p></div>');
         };
 

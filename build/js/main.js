@@ -31,19 +31,22 @@ function main(){
 
         var map_wrap = d3.select(".map-container .map-panel");
 
+
         var map = mapd(map_wrap.append("div").node()).zoomable(true).responsive(true).zoomLevels(2);
         var state_layer = map.layer().geo(map.geo("state")).attr("stroke","#999999").attr("fill","none");
         var metro_layer = map.layer().geo(map.geo("metro").filter(function(d){return d.t100==1}))
                               .attr("stroke","#999999").attr("fill-opacity","0.9").data(data, "CBSA_Code");  
 
         //render map to div below map
-        var legend_wrap = map_wrap.append("div").style("margin","0.5rem 2rem 0.25rem 2rem").classed("map-legend",true);
-        map.legend.wrap(legend_wrap.node());  
+        var legend_wrap = map_wrap.append("div").style("margin","0.5rem auto 0.25rem auto").classed("c-fix",true)
+                                  .append("div").style("float","right").style("border-top","1px solid #aaaaaa")
+                                  .style("padding","10px").classed("map-legend",true); 
+        map.legend.wrap(legend_wrap.node()); 
                               
         var map_scenes = {
           "pop":{
               var:"MShare15",
-              varname:"Millenials share of total population, 2015",
+              varname:"Millennials share of total population, 2015",
               text:["Among metropolitan areas, the 15 metropolitan areas with the highest shares of millennials are all in the fast-growing South and West, such as Austin, Colorado Springs, San Diego, and Los Angeles.", "The lowest millennial shares tend to be in Florida, such as Tampa and Miami, in the Northeast, such as Pittsburgh, and in the Midwest, such as Cleveland and Detroit."
               ],
               draw: function(){
@@ -51,7 +54,7 @@ function main(){
                 //var r = metro_layer.aes.r("MPop15").radii(0,30);     
                 map.legend.swatch(fill.ticks(), function(v){
                   return format.num0(v[0]) + "% to " + format.num0(v[1]) + "%";
-                }, "Millenial share of the population, 2015");  
+                }, "Millennial share of the population, 2015");  
                 //map.legend.bubble(r.ticks([100000, 500000, 1000000]), format.num0, "Number of Millenials, 2015");
                 //tooltip  
 
@@ -132,9 +135,17 @@ function main(){
         var sharerank = format.ranker(data.map(function(d){return d.MShare15}));
 
         var tooltip = function(obs){
+          var tip = d3.select(this);
+
+          var svg = tip.selectAll("svg").data([obs]);
+          svg.exit().remove();
+
+          var bars = svg.enter().append("svg").attr("width","100%").attr("height","300px").merge(svg)
+                        .selectAll();
+
           var tip = d3.select(this); 
           tip.html('<div class="tight-text"> <p><strong>' + obs.CBSA_Title + '</strong></p>' + 
-                 '<p>In 2015, ' + format.num0(obs.MPop15) + ' Millenials lived in the metro area (' + poprank(obs.MPop15) + '), accounting for ' + 
+                 '<p>In 2015, ' + format.num0(obs.MPop15) + ' Millennials lived in the metro area (' + poprank(obs.MPop15) + '), accounting for ' + 
                                   format.num1(obs.MShare15) + '%  of all residents (' + sharerank(obs.MShare15) + ')</p></div>');
         }
 
