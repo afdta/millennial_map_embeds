@@ -727,6 +727,9 @@ function get_dim(el){
 	return dim;
 }
 
+//To do: make tooltip variable width
+//To do: selectively call tooltip on enter only? Or just add this to api
+
 function tooltips(layer, dom, annotation_group){
 
 	var tip = dom.tip;
@@ -1007,6 +1010,8 @@ function tooltips(layer, dom, annotation_group){
 // 3) initial geo 
 // 4) update geos: a) append, b) replace
 // 5) aesthetics on bound geos only or on all data uploaded
+
+//to do: shouldn't attr and style methods just operate directly on svg selection
 
 //future features -- if duplicates are present in the code, provide a mechanism to "roll up" thes observations into summary data
 //to do: enforce geo added only is featurecollection with feature.properties.geo_id available as unique geo id. ensures clean update of aesthetics on resize due to use of key function 
@@ -1968,16 +1973,18 @@ function legend(container){
 		inner_wrap.selectAll("div.swatch-legend").remove();
 		var wrap = inner_wrap.append("div").classed("c-fix swatch-legend", true)
 							 .style("float", L)
-							 .style("margin","0em " + (L ? "2em" : "0em") + " 0em " + (L ? "0em" : "2em"));
+							 .style("margin","0em " + (L ? "2em" : "0em") + " 0em " + (L ? "0em" : "2em"))
+							 .style("opacity","0");
 
 		var svgwrap = wrap.append("div").style("margin","0rem auto");
+		var title_text = svgwrap.append("p").style("margin","0rem").style("display","none");
 		var svg = svgwrap.append("svg").attr("width","100%").attr("height","100%");
-		var g = svg.append("g").attr("transform","translate(0,25)");
+		var g = svg.append("g").attr("transform","translate(0,0)");
 
 		var s_height = 15;
 		var s_width = 35;
 
-		svgwrap.style("height", (2*s_height + 2*padding + 25)+"px");
+		//svgwrap.style("height", (2*s_height + 2*padding + 25)+"px");
 
 		if(landscape){
 
@@ -2012,14 +2019,22 @@ function legend(container){
 								})
 								.attr("y", 13);
 
-				var title_text = svg.append("text").text(title).attr("x", "0%").attr("text-anchor","start").attr("y",12);
+				if(title != null){
+					title_text.text(title).style("display","block");
+				}
+				else{
+					title_text.text("").style("display","none");
+				}
+				
 				setTimeout(function(){
 					var box = g.node().getBoundingClientRect();
-					var box1 = title_text.node().getBoundingClientRect();
+					//var box1 = title_text.node().getBoundingClientRect();
 					var w = box.right - box.left;
-					var w1 = box1.right - box1.left;
-					var h = box.bottom-box.top+box1.bottom-box1.top+10;
-					svgwrap.style("width", Math.max(w1,w)+"px").style("height",h+"px");
+					//var w1 = box1.right - box1.left;
+					var h = box.bottom-box.top+10;
+					svg.attr("width", w+"px").attr("height",h+"px");
+
+					wrap.transition().duration(500).style("opacity",1);
 				},0);
 
 			},0);		
@@ -2106,6 +2121,7 @@ function mapd(root_container){
 								  .style("width","100%")
 								  .style("min-height","150px")
 								  .style("padding","0px")
+								  .style("position","relative")
 								  .classed("map_container_wrap", true);
 
 	//container_wrap node
@@ -2118,7 +2134,7 @@ function mapd(root_container){
 									.style("height","100%")
 									.style("min-height","150px")
 									.style("position","relative")
-									.style("overflow","visible");
+									.style("overflow","hidden");
 
 	var map_canvas = outer_wrap.append("canvas").style("width","100%").style("height","100%").style("position","absolute").style("z-index","1");
 	var map_svg = outer_wrap.append("svg").attr("width","100%").attr("height","100%").style("position","relative").style("z-index","2");
@@ -2126,7 +2142,7 @@ function mapd(root_container){
 	//TOOLTIP
 	var tip_pad = 20;
 	var tip_width = 250;
-	var tooltip_wrap = outer_wrap.append("div")
+	var tooltip_wrap = container_wrap.append("div")
 								 .style("position","absolute")
 								 .style("visibility","hidden")
 								 .style("opacity","0")
@@ -2171,20 +2187,20 @@ function mapd(root_container){
 	//END TOOLTIP	
 
 
-	var zoom_button = outer_wrap.append("div").style("position","absolute").style("top","3rem").style("left","80%")
+	var zoom_button = outer_wrap.append("div").style("position","absolute").style("top","60%").style("right","10px")
 												.style("width","70px").style("height","50px")
 												.style("z-index","10")
 												.style("cursor","pointer")
 												.style("padding","10px 15px")
 												.style("border","1px solid #dddddd")
-												.style("border-radius","5px")
+												.style("border-radius","15px")
 												.style("background-color","rgba(255,255,255,0.8)")
 												.style("z-index","10");
 
 	var zoom_svg = zoom_button.append("svg").attr("width","40px").attr("height","30px")
 									.attr("viewBox","0 0 40 30");
 	var zoom_in_g = zoom_svg.append("g").attr("transform","translate(0,-1050)")
-											.attr("stroke","#0d73d6")
+											.attr("stroke","#333333")//.attr("stroke","#0d73d6")
 											.attr("stroke-linecap","round")
 											.attr("fill","none");	
 
@@ -2856,29 +2872,52 @@ function main(){
         var map_wrap = d3.select(".map-container .map-panel");
 
 
+    //build svg filters
+    var defs = map_wrap.append("div").style("height","1px").append("svg").append("defs");
+    var filter = defs.append("filter").attr("id","feBlur").attr("width","150%").attr("height","150%");
+    filter.append("feOffset").attr("result","offsetout").attr("in","SourceGraphic").attr("dx","6").attr("dy","6");
+    filter.append("feColorMatrix").attr("result","matrixout").attr("in","offsetout").attr("type","matrix").attr("values","0.25 0 0 0 0 0 0.25 0 0 0 0 0 0.25 0 0 0 0 0 1 0");
+    filter.append("feGaussianBlur").attr("result","blurout").attr("in","matrixout").attr("stdDeviation","6");
+    filter.append("feBlend").attr("in","SourceGraphic").attr("in2","blurout").attr("mode","normal");
+
+    var filter2 = defs.append("filter").attr("id","feBlur2").attr("width","150%").attr("height","150%");
+    filter2.append("feOffset").attr("result","offsetout").attr("in","SourceGraphic").attr("dx","2").attr("dy","2");
+    filter2.append("feColorMatrix").attr("result","matrixout").attr("in","offsetout").attr("type","matrix").attr("values","0.25 0 0 0 0 0 0.25 0 0 0 0 0 0.25 0 0 0 0 0 0.5 0");
+    filter2.append("feGaussianBlur").attr("result","blurout").attr("in","matrixout").attr("stdDeviation","5");
+    filter2.append("feBlend").attr("in","SourceGraphic").attr("in2","blurout").attr("mode","normal");      
+
         var map = mapd(map_wrap.append("div").node()).zoomable(true).responsive(true).zoomLevels(2);
-        var state_layer = map.layer().geo(map.geo("state")).attr("stroke","#999999").attr("fill","none");
+        var us_layer = map.layer().geo(map.geo("us")).attr("filter","url(#feBlur2)");
+        var state_layer = map.layer().geo(map.geo("state")).attr("stroke","#999999").attr("fill","#ffffff");
         var metro_layer = map.layer().geo(map.geo("metro").filter(function(d){return d.t100==1}))
                               .attr("stroke","#999999").attr("fill-opacity","0.9").data(data, "CBSA_Code");  
+
+        var title = d3.select("#map-title"); //map.title().append("p").style("font-weight","bold");
 
         //render map to div below map
         var legend_wrap = map_wrap.append("div").style("margin","0.5rem auto 0.25rem auto").classed("c-fix",true)
                                   .append("div").style("float","right").style("border-top","1px solid #aaaaaa")
                                   .style("padding","10px").classed("map-legend",true); 
         map.legend.wrap(legend_wrap.node()); 
-                              
+
+        //var pal = ['#c7e9c0','#74c476','#41ab5d','#238b45','#005a32'];
+        var pal = ['#c6dbef','#9ecae1','#6baed6','#3182bd','#08519c'];
+        //var pal = ['#89e2e9', '#32cdd9', "#1f9fa9", "#17767e", "#0f4e53"]
+        
+        var map_var = null;                      
         var map_scenes = {
           "pop":{
               var:"MShare15",
-              varname:"Millennials share of total population, 2015",
+              varname:"Millennial share of total population in the 100 largest metropolitan areas, 2015",
+              button:"Overall",
               text:["Among metropolitan areas, the 15 metropolitan areas with the highest shares of millennials are all in the fast-growing South and West, such as Austin, Colorado Springs, San Diego, and Los Angeles.", "The lowest millennial shares tend to be in Florida, such as Tampa and Miami, in the Northeast, such as Pittsburgh, and in the Midwest, such as Cleveland and Detroit."
               ],
               draw: function(){
-                var fill = metro_layer.aes.fill("MShare15").quantile(['#eff3ff','#bdd7e7','#6baed6','#3182bd','#08519c']);
+                var fill = metro_layer.aes.fill("MShare15").quantile(pal);
                 //var r = metro_layer.aes.r("MPop15").radii(0,30);     
                 map.legend.swatch(fill.ticks(), function(v){
                   return format.num0(v[0]) + "% to " + format.num0(v[1]) + "%";
-                }, "Millennial share of the population, 2015");  
+                });  
                 //map.legend.bubble(r.ticks([100000, 500000, 1000000]), format.num0, "Number of Millenials, 2015");
                 //tooltip  
 
@@ -2888,13 +2927,14 @@ function main(){
           "white":{
             var:"White",
             varname:'Share of millennials who are <b>white</b>, 2015',
+            button:"White",
             text: ["Among the largest 100 largest metropolitan areas, 30 are “minority white,” including Miami, Houston, Los Angeles, New York, Atlanta and Chicago. Conversely, 18 metropolitan areas have millennial populations that are at least 60% white, including Philadelphia, Charlotte, Tampa and Seattle. Only four of the largest 100 metropolitan areas house millennial populations where whites exceed 80%."],
             draw: function(){
-                var fill = metro_layer.aes.fill("White").quantile(['#eff3ff','#bdd7e7','#6baed6','#3182bd','#08519c']);
+                var fill = metro_layer.aes.fill("White").quantile(pal);
                 //var r = metro_layer.aes.r("White").radii(0,30);   
                 map.legend.swatch(fill.ticks(), function(v){
                   return format.num0(v[0]) + "% to " + format.num0(v[1]) + "%";
-                }, "Share of the millennial population that is white, 2015");  
+                });  
                 //map.legend.bubble(r.ticks([100000, 500000, 1000000]), format.num0, "Number of Millenials, 2015");  
 
                 map.draw();     
@@ -2903,13 +2943,14 @@ function main(){
           "black":{
             var:"Black",
             varname:'Share of millennials who are <b>black</b>, 2015',
+            button:"Black",
             text: ["In general, black millennials settle more often in Southern areas (including Atlanta, Dallas, Houston, and Miami, as well as New York, Philadelphia, and Washington, D.C.)"],
             draw: function(){
-                var fill = metro_layer.aes.fill("Black").quantile(['#eff3ff','#bdd7e7','#6baed6','#3182bd','#08519c']);
+                var fill = metro_layer.aes.fill("Black").quantile(pal);
                 //var r = metro_layer.aes.r("White").radii(0,30);   
                 map.legend.swatch(fill.ticks(), function(v){
                   return format.num0(v[0]) + "% to " + format.num0(v[1]) + "%";
-                }, "Share of the millennial population that is black, 2015");  
+                });  
                 //map.legend.bubble(r.ticks([100000, 500000, 1000000]), format.num0, "Number of Millenials, 2015");  
 
                 map.draw();     
@@ -2918,13 +2959,14 @@ function main(){
           "hispanic":{
             var:"Hispanic",
             varname:'Share of millennials who are <b>Hispanic</b>, 2015',
+            button:"Hispanic",
             text: ["Hispanic millennials settle more often in Southern areas (including Houston, Miami, Dallas, Los Angeles, as well as New York and Chicago)"],
             draw: function(){
-                var fill = metro_layer.aes.fill("Hispanic").quantile(['#eff3ff','#bdd7e7','#6baed6','#3182bd','#08519c']);
+                var fill = metro_layer.aes.fill("Hispanic").quantile(pal);
                 //var r = metro_layer.aes.r("White").radii(0,30);   
                 map.legend.swatch(fill.ticks(), function(v){
                   return format.num0(v[0]) + "% to " + format.num0(v[1]) + "%";
-                }, "Share of the millennial population that is Hispanic, 2015");  
+                });  
                 //map.legend.bubble(r.ticks([100000, 500000, 1000000]), format.num0, "Number of Millenials, 2015");  
 
                 map.draw();     
@@ -2933,13 +2975,14 @@ function main(){
           "asian":{
             var:"Asian",
             varname:'Share of millennials who are <b>Asian</b>, 2015',
+            button:"Asian",
             text: ["Asian millennials settle more often in the West (including San Francisco, San Jose, and Seattle, as well as Chicago, Washington, D.C. and Houston)"],
             draw: function(){
-                var fill = metro_layer.aes.fill("Asian").quantile(['#eff3ff','#bdd7e7','#6baed6','#3182bd','#08519c']);
+                var fill = metro_layer.aes.fill("Asian").quantile(pal);
                 //var r = metro_layer.aes.r("White").radii(0,30);   
                 map.legend.swatch(fill.ticks(), function(v){
                   return format.num0(v[0]) + "% to " + format.num0(v[1]) + "%";
-                }, "Share of the millennial population that is Asian, 2015");  
+                });  
                 //map.legend.bubble(r.ticks([100000, 500000, 1000000]), format.num0, "Number of Millenials, 2015");  
 
                 map.draw();     
@@ -2952,25 +2995,58 @@ function main(){
             map_buttons_u.exit().remove();
 
         map_buttons.html(function(d){
-          return '<p class="no-select" style="font-size:0.85rem;text-transform:uppercase;">' + map_scenes[d].varname + '</p>';
+          return '<p class="no-select" style="font-size:0.85rem;text-transform:uppercase;text-align:center;">' + map_scenes[d].button + '</p>';
         });        
 
         var poprank = format.ranker(data.map(function(d){return d.MPop15}));
         var sharerank = format.ranker(data.map(function(d){return d.MShare15}));
 
+        var tip_code = null;
+        var scale = d3.scaleLinear().domain([0,100]).range([10,90]); //range in %
         var tooltip = function(obs){
           var tip = d3.select(this);
 
-          var svg = tip.selectAll("svg").data([obs]);
-          svg.exit().remove();
+          if(tip_code !== obs.CBSA_Code){
 
-          var bars = svg.enter().append("svg").attr("width","100%").attr("height","300px").merge(svg)
-                        .selectAll();
+            var p = tip.selectAll("p").data(['<strong style="font-size:17px;">' + obs.CBSA_Title + '</strong>', 
+                                             '<em>Millennial share: ' + format.num1(obs.MShare15) + '% of pop.</em>',
+                                             '<em>Millennials by race/ethnicity</em>'
+                                            ]);
 
-          var tip = d3.select(this); 
-          tip.html('<div class="tight-text"> <p><strong>' + obs.CBSA_Title + '</strong></p>' + 
-                 '<p>In 2015, ' + format.num0(obs.MPop15) + ' Millennials lived in the metro area (' + poprank(obs.MPop15) + '), accounting for ' + 
-                                  format.num1(obs.MShare15) + '%  of all residents (' + sharerank(obs.MShare15) + ')</p></div>');
+            p.enter().append("p").merge(p).html(function(d){return d}).style("font-size","15px")
+                      .style("margin",function(d,i){return i==2 ? "12px 0px 0px 0px" : "6px 0px"})
+                      .style("line-height","1.25em");
+
+
+            var svg = tip.selectAll("svg").data([obs]);
+            svg.exit().remove();
+
+            var bar_g = svg.enter().append("svg").attr("width","100%").attr("height","200px").merge(svg).style("border-top","1px solid #aaaaaa")
+                          .selectAll("g").data([{share: obs.White, fill: "#b2b2b2", label: "White"},
+                                               {share: obs.Black, fill: "#5b5b5b", label: "Black"},
+                                               {share: obs.Hispanic, fill: "#2fc4f2", label: "Hispanic"},
+                                               {share: obs.Asian, fill: "#70ad47", label: "Asian"},
+                                               {share: obs.AIAN, fill: "#ed7d31", label: "Am. Indian/Alaska Native"},
+                                               {share: obs.TwoPlus, fill: "#ffc000", label: "2+ Races"}]);
+                bar_g.exit().remove();
+            var bar_ge = bar_g.enter().append("g");
+                bar_ge.append("text").attr("y","12").attr("x","0").style("font-size","13px");
+                bar_ge.append("rect").attr("y","15").attr("height","10px");
+
+            var g = bar_ge.merge(bar_g).attr("transform",function(d,i){
+              return "translate(0," + (10 + (i*30)) + ")";
+            });
+
+            var rects = g.select("rect").attr("fill", function(d){return d.fill}).attr("width", function(d){return scale(d.share)+"%"});
+            var texts = g.select("text").text(function(d){return d.label + " (" + format.num1(d.share) + "%)"})
+                          .style("font-weight", function(d){return d.label === map_var ? "bold" : "normal"});
+
+
+            //console.log(obs);
+            tip_code = obs.CBSA_Code;
+          }
+
+
         };
 
         metro_layer.tooltips(tooltip);    
@@ -2981,6 +3057,8 @@ function main(){
           });
 
           var scene = map_scenes[d];
+          title.html(scene.varname).style("text-align","center").style("margin","1.5rem 0px 0px 0px").style("font-weight","bold");
+          map_var = scene.var;
 
           var p = map_finding.selectAll("p").data(scene.text);
           p.exit().remove();

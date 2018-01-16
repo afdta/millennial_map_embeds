@@ -206,7 +206,7 @@
 }
 
 #metro-interactive .map-legend text{
-  fill:#555555;
+  fill:#333333;
 }
 
 
@@ -276,6 +276,7 @@
     width:100%;
     display:block;
     padding:0rem 1rem;
+    vertical-align:top;
   }
 
   #metro-interactive .grid-wrap.with-borders .grid-row .grid-cell{padding: 1rem 1.5rem 1rem 1.5rem;}  
@@ -303,7 +304,7 @@
 @media (min-width:950px){
 
   #metro-interactive .grid-wrap.with-borders{margin-left:-0.5rem;}
-  #metro-interactive .grid-wrap .grid-row .grid-cell{padding:0rem 2rem 1rem 0rem; display:table-cell;}
+  #metro-interactive .grid-wrap .grid-row .grid-cell{padding:0rem 2rem 1rem 0rem; display:table-cell; vertical-align:middle;}
   #metro-interactive .grid-wrap.with-borders .grid-row .grid-cell{padding: 1rem 1.5rem 1rem 1.5rem;}
 
   #metro-interactive .grid-wrap .grid-row.three-cells .grid-cell{width:33%;} 
@@ -360,10 +361,6 @@
   float:left;
   width:18%;
   margin-right:2%;
-}
-
-#metro-interactive .map-container .button-panel > div:first-child{
-  border-width:0px 0px 0px 0px;
 }
 
 #metro-interactive .map-container .button-panel > div.selected{
