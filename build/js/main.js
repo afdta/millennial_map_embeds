@@ -68,10 +68,15 @@ function main(){
         var map_scenes = {
           "pop":{
               var:"MShare15",
-              varname:"Millennial share of total population in the 100 largest metropolitan areas, 2015",
+              varname:"Millennials share of total population in the 100 largest metropolitan areas, 2015",
               button:"Overall",
-              text:["Among metropolitan areas, the 15 metropolitan areas with the highest shares of millennials are all in the fast-growing South and West, such as Austin, Colorado Springs, San Diego, and Los Angeles.", "The lowest millennial shares tend to be in Florida, such as Tampa and Miami, in the Northeast, such as Pittsburgh, and in the Midwest, such as Cleveland and Detroit."
-              ],
+              text:[
+"There is wide variation among metropolitan areas in terms of the size and growth of their millennial populations. This interactive map presents statistics for the nation’s 100 largest metropolitan areas and 50 states on growth and share of their millennial populations and their racial and ethnic compositions. Note: Hover over each area to view relevant statistics.",
+
+"Racial and ethnic minorities make up more than half of the millennial population in 10 states, including California, Texas, Arizona, Florida, Georgia, and New Jersey. In another 10 states, including New York, Illinois, Virginia, and North and South Carolina, minorities comprise more than 40 percent of millennial residents. Other states have “whiter” millennial populations, but only nine states are home to largely (over 80 percent) white millennial populations, including Wyoming, Iowa, West Virginia, and Maine.",
+
+"Among metropolitan areas, the 15 metropolitan areas with the highest shares of millennials are all in the fast-growing South and West, such as Austin, Colorado Springs, San Diego, and Los Angeles. Listed within this report amongst states, the District of Columbia is a sizeable 34.8 percent millennial. The lowest millennial shares tend to be in Florida, such as Tampa and Miami, in the Northeast, such as Pittsburgh, and in the Midwest, such as Cleveland and Detroit."],
+
               draw: function(){
                 var fill = metro_layer.aes.fill("MShare15").quantile(pal);
                 //var r = metro_layer.aes.r("MPop15").radii(0,30);     
@@ -88,7 +93,10 @@ function main(){
             var:"White",
             varname:'Share of millennials who are <b>white</b>, 2015',
             button:"White",
-            text: ["Among the largest 100 largest metropolitan areas, 30 are “minority white,” including Miami, Houston, Los Angeles, New York, Atlanta and Chicago. Conversely, 18 metropolitan areas have millennial populations that are at least 60% white, including Philadelphia, Charlotte, Tampa and Seattle. Only four of the largest 100 metropolitan areas house millennial populations where whites exceed 80%."],
+            text:[
+"The largest white millennial settlements are in the biggest metropolitan areas—New York, Chicago, and Los Angeles—as well as Philadelphia, Boston, Dallas, and Washington, D.C.",
+"Among the 100 largest metropolitan areas, 18 have millennial populations that are at least 60 percent white, including Seattle, Charlotte, Tampa, and Philadelphia. Only four of the largest 100 metropolitan areas house millennial populations where whites exceed 80 percent (Knoxville, Tenn.; Provo Utah; Pittsburgh; and Spokane, Wash.). Conversely, 30 are “minority white,” including Miami, Houston, Los Angeles, New York, Atlanta and Chicago. "
+            ],
             draw: function(){
                 var fill = metro_layer.aes.fill("White").quantile(pal);
                 //var r = metro_layer.aes.r("White").radii(0,30);   
@@ -104,7 +112,10 @@ function main(){
             var:"Black",
             varname:'Share of millennials who are <b>black</b>, 2015',
             button:"Black",
-            text: ["In general, black millennials settle more often in Southern areas (including Atlanta, Dallas, Houston, and Miami, as well as New York, Philadelphia, and Washington, D.C.)"],
+            text: [
+"In general, black millennials settle more often in Southern areas (including Atlanta, Dallas, Houston, and Miami, as well as New York, Philadelphia, and Washington, D.C.). In Atlanta, Charlotte, and Detroit, blacks are the largest minority group among millennials. ",
+"The largest black millennial settlement and young adult gain areas have a distinctly Southern bent. Atlanta ranks first in black young adult gains and second in the size of black millennial settlement. Other metropolitan areas that saw black young adult gain are Dallas, Houston, Washington, D.C., and Miami in the South, as well as New York and Philadelphia."
+            ],
             draw: function(){
                 var fill = metro_layer.aes.fill("Black").quantile(pal);
                 //var r = metro_layer.aes.r("White").radii(0,30);   
@@ -120,7 +131,7 @@ function main(){
             var:"Hispanic",
             varname:'Share of millennials who are <b>Hispanic</b>, 2015',
             button:"Hispanic",
-            text: ["Hispanic millennials settle more often in Southern areas (including Houston, Miami, Dallas, Los Angeles, as well as New York and Chicago)"],
+            text: ["New York and Los Angeles are major settlement areas for Hispanic millennials. In general, Hispanic millennials settle more often in Southern areas—Houston, Miami, and Dallas—along with Riverside, Calif., and Chicago. Additionally, New York, Los Angeles, and Houston are top gainers for Hispanic millennials."],
             draw: function(){
                 var fill = metro_layer.aes.fill("Hispanic").quantile(pal);
                 //var r = metro_layer.aes.r("White").radii(0,30);   
@@ -136,7 +147,7 @@ function main(){
             var:"Asian",
             varname:'Share of millennials who are <b>Asian</b>, 2015',
             button:"Asian",
-            text: ["Asian millennials settle more often in the West (including San Francisco, San Jose, and Seattle, as well as Chicago, Washington, D.C. and Houston)"],
+            text: ["New York and Los Angeles are major settlement areas for Asian millennials. In general, Asian millennials settle more often in the West, including in San Francisco, San Jose, and Seattle, along with Chicago and Washington, D.C. Additionally, New York, Los Angeles, and Houston are top gainers for Asian millennials."],
             draw: function(){
                 var fill = metro_layer.aes.fill("Asian").quantile(pal);
                 //var r = metro_layer.aes.r("White").radii(0,30);   

@@ -228,10 +228,12 @@
 #metro-interactive .grid-wrap .grid-row .grid-cell{
   display:table-cell;
   padding:0rem 1rem 1rem 1rem;
-  margin-bottom:1rem;
+  margin-bottom:0.25rem;
   position:relative;
-  vertical-align:middle;
+  vertical-align:top;
 }
+
+#metro-interactive .grid-wrap .grid-row .grid-cell .cell-title{font-size:1em};
 
 #metro-interactive .grid-wrap .grid-row .grid-cell .grid-cell-title{
   color:#dc2a2a;
@@ -253,7 +255,7 @@
   position:absolute;
 }
 
-#metro-interactive .grid-wrap.with-borders .grid-row .grid-cell:after{
+#metro-interactive .grid-wrap.with-borders .grid-row .grid-cell:first-child:after{
   content:"";
   background-color:#aaaaaa;
   width:1em;
@@ -304,7 +306,7 @@
 @media (min-width:950px){
 
   #metro-interactive .grid-wrap.with-borders{margin-left:-0.5rem;}
-  #metro-interactive .grid-wrap .grid-row .grid-cell{padding:0rem 2rem 1rem 0rem; display:table-cell; vertical-align:middle;}
+  #metro-interactive .grid-wrap .grid-row .grid-cell{padding:0rem 2rem 1rem 0rem; display:table-cell; vertical-align:top;}
   #metro-interactive .grid-wrap.with-borders .grid-row .grid-cell{padding: 1rem 1.5rem 1rem 1.5rem;}
 
   #metro-interactive .grid-wrap .grid-row.three-cells .grid-cell{width:33%;} 
