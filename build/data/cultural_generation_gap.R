@@ -17,8 +17,9 @@ names(shares15) <- nm
 names(shares25) <- nm
 names(shares35) <- nm
 
+#data checked 1/17/17 against spreadsheet
 bound <- bind_rows(shares15, shares25, shares35) %>% gather(generation, within_gen_share, pre_millennials:post_millennials)
-
+#data checked 1/17/17 against spreadsheet
 total_pop <- tibble(year=c(2015, 2015, 2015, 2025, 2025, 2025, 2035, 2035, 2035),
                     generation=c("pre_millennials", "millennials", "post_millennials",
                                  "pre_millennials", "millennials", "post_millennials",
