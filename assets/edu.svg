@@ -5,16 +5,12 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   id="Layer_1"
-   data-name="Layer 1"
-   viewBox="0 0 750 250"
-   version="1.1"
-   sodipodi:docname="edu.svg"
+   height="275"
    width="750"
-   height="250"
-   inkscape:version="0.92.1 r15371">
+   version="1.1"
+   viewBox="0 0 750 275"
+   data-name="Layer 1"
+   id="Layer_1">
   <metadata
      id="metadata249">
     <rdf:RDF>
@@ -27,26 +23,6 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1718"
-     inkscape:window-height="821"
-     id="namedview247"
-     showgrid="false"
-     inkscape:zoom="0.97531385"
-     inkscape:cx="339.61669"
-     inkscape:cy="255.86052"
-     inkscape:window-x="63"
-     inkscape:window-y="34"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="Layer_1" />
   <defs
      id="defs4">
     <style
@@ -54,196 +30,231 @@
   </defs>
   <title
      id="title6">Millennials - static graphics v2 - Separate artboards</title>
-  <path
-     class="cls-1"
-     d="M 222.02296,236.24 V 59.36 M 351.05738,236.24 V 59.36 M 478.17756,236.24 V 59.36 M 607.21198,236.24 V 59.36 M 736.2464,236.24 V 59.36"
-     id="path8"
-     inkscape:connector-curvature="0"
-     style="fill:none;stroke:#d9d9d9;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none" />
-  <polygon
-     class="cls-2"
-     points="97.29,71.3 97.29,85.97 239.43,85.97 239.43,71.3 "
-     id="polygon10"
-     style="fill:#b2b2b2"
-     transform="matrix(1.9532912,0,0,1,-98.043333,-8)" />
-  <polygon
-     class="cls-3"
-     points="239.43,71.3 239.43,85.97 336.53,85.97 336.53,71.3 "
-     id="polygon12"
-     style="fill:#ed7d31"
-     transform="matrix(1.9532912,0,0,1,-98.043333,-8)" />
-  <polygon
-     class="cls-4"
-     points="336.53,71.3 336.53,85.97 410.6,85.97 410.6,71.3 "
-     id="polygon14"
-     style="fill:#ffd98d"
-     transform="matrix(1.9532912,0,0,1,-98.043333,-8)" />
-  <polygon
-     class="cls-5"
-     points="409.91,71.3 409.91,85.97 427,85.97 427,71.3 "
-     id="polygon16"
-     style="fill:#e0a500"
-     transform="matrix(1.9532912,0,0,1,-98.043333,-8)" />
-  <polygon
-     class="cls-2"
-     points="97.29,123.18 97.29,137.85 172.37,137.85 172.37,123.18 "
-     id="polygon18"
-     style="fill:#b2b2b2"
-     transform="matrix(1.9532912,0,0,1,-98.043333,-8)" />
-  <polygon
-     class="cls-3"
-     points="172.37,123.18 172.37,137.85 289.48,137.85 289.48,123.18 "
-     id="polygon20"
-     style="fill:#ed7d31"
-     transform="matrix(1.9532912,0,0,1,-98.043333,-8)" />
-  <polygon
-     class="cls-4"
-     points="289.48,123.18 289.48,137.85 404.6,137.85 404.6,123.18 "
-     id="polygon22"
-     style="fill:#ffd98d"
-     transform="matrix(1.9532912,0,0,1,-98.043333,-8)" />
-  <polygon
-     class="cls-5"
-     points="403.87,123.18 403.87,137.85 427,137.85 427,123.18 "
-     id="polygon24"
-     style="fill:#e0a500"
-     transform="matrix(1.9532912,0,0,1,-98.043333,-8)" />
-  <polygon
-     class="cls-2"
-     points="97.29,177.46 97.29,192.13 152.35,192.13 152.35,177.46 "
-     id="polygon26"
-     style="fill:#b2b2b2"
-     transform="matrix(1.9532912,0,0,1,-98.043333,-8)" />
-  <polygon
-     class="cls-3"
-     points="152.35,177.46 152.35,192.13 239.43,192.13 239.43,177.46 "
-     id="polygon28"
-     style="fill:#ed7d31"
-     transform="matrix(1.9532912,0,0,1,-98.043333,-8)" />
-  <polygon
-     class="cls-4"
-     points="239.43,177.46 239.43,192.13 342.54,192.13 342.54,177.46 "
-     id="polygon30"
-     style="fill:#ffd98d"
-     transform="matrix(1.9532912,0,0,1,-98.043333,-8)" />
-  <polygon
-     class="cls-5"
-     points="341.54,177.46 341.54,192.13 427,192.13 427,177.46 "
-     id="polygon32"
-     style="fill:#e0a500"
-     transform="matrix(1.9532912,0,0,1,-98.043333,-8)" />
-  <polygon
-     class="cls-2"
-     points="97.29,225.54 97.29,242.3 301.5,242.3 301.5,225.54 "
-     id="polygon34"
-     style="fill:#b2b2b2"
-     transform="matrix(1.9532912,0,0,1,-98.043333,-8)" />
-  <polygon
-     class="cls-3"
-     points="301.5,225.54 301.5,242.3 360.55,242.3 360.55,225.54 "
-     id="polygon36"
-     style="fill:#ed7d31"
-     transform="matrix(1.9532912,0,0,1,-98.043333,-8)" />
-  <polygon
-     class="cls-4"
-     points="360.55,225.54 360.55,242.3 409.6,242.3 409.6,225.54 "
-     id="polygon38"
-     style="fill:#ffd98d"
-     transform="matrix(1.9532912,0,0,1,-98.043333,-8)" />
-  <polygon
-     class="cls-5"
-     points="408.9,225.54 408.9,242.3 427,242.3 427,225.54 "
-     id="polygon40"
-     style="fill:#e0a500"
-     transform="matrix(1.9532912,0,0,1,-98.043333,-8)" />
   <line
-     class="cls-1"
-     x1="92.969017"
-     y1="59.360001"
-     x2="92.969017"
-     y2="236.24001"
+     style="fill:none;stroke:#dddddd;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="line42"
-     style="fill:none;stroke:#d9d9d9;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none" />
+     y2="231.23999"
+     x2="92.969017"
+     y1="54.360001"
+     x1="92.969017"
+     class="cls-1" />
   <text
-     class="cls-20"
-     id="text244"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#595959"
+     y="-25.983845"
      x="579.61462"
-     y="-50.983845" />
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#595959"
+     id="text244"
+     class="cls-20" />
+  <path
+     style="fill:none;stroke:#dddddd;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path8"
+     d="M 222.02296,231.24 V 54.36 M 351.05738,231.24 V 54.36 M 478.17756,231.24 V 54.36 M 607.21198,231.24 V 54.36 M 736.2464,231.24 V 54.36"
+     class="cls-1" />
+  <polygon
+     transform="matrix(1.9532912,0,0,1,-98.043333,-13)"
+     style="fill:#b2b2b2"
+     id="polygon10"
+     points="239.43,85.97 239.43,71.3 97.29,71.3 97.29,85.97 "
+     class="cls-2" />
+  <polygon
+     transform="matrix(1.9532912,0,0,1,-98.043333,-13)"
+     style="fill:#ed7d31"
+     id="polygon12"
+     points="336.53,85.97 336.53,71.3 239.43,71.3 239.43,85.97 "
+     class="cls-3" />
+  <polygon
+     transform="matrix(1.9532912,0,0,1,-98.043333,-13)"
+     style="fill:#ffd98d"
+     id="polygon14"
+     points="410.6,85.97 410.6,71.3 336.53,71.3 336.53,85.97 "
+     class="cls-4" />
+  <polygon
+     transform="matrix(1.9532912,0,0,1,-98.043333,-13)"
+     style="fill:#e0a500"
+     id="polygon16"
+     points="427,85.97 427,71.3 409.91,71.3 409.91,85.97 "
+     class="cls-5" />
+  <polygon
+     transform="matrix(1.9532912,0,0,1,-98.043333,-13)"
+     style="fill:#b2b2b2"
+     id="polygon18"
+     points="172.37,137.85 172.37,123.18 97.29,123.18 97.29,137.85 "
+     class="cls-2" />
+  <polygon
+     transform="matrix(1.9532912,0,0,1,-98.043333,-13)"
+     style="fill:#ed7d31"
+     id="polygon20"
+     points="289.48,137.85 289.48,123.18 172.37,123.18 172.37,137.85 "
+     class="cls-3" />
+  <polygon
+     transform="matrix(1.9532912,0,0,1,-98.043333,-13)"
+     style="fill:#ffd98d"
+     id="polygon22"
+     points="404.6,137.85 404.6,123.18 289.48,123.18 289.48,137.85 "
+     class="cls-4" />
+  <polygon
+     transform="matrix(1.9532912,0,0,1,-98.043333,-13)"
+     style="fill:#e0a500"
+     id="polygon24"
+     points="427,137.85 427,123.18 403.87,123.18 403.87,137.85 "
+     class="cls-5" />
+  <polygon
+     transform="matrix(1.9532912,0,0,1,-98.043333,-13)"
+     style="fill:#b2b2b2"
+     id="polygon26"
+     points="152.35,192.13 152.35,177.46 97.29,177.46 97.29,192.13 "
+     class="cls-2" />
+  <polygon
+     transform="matrix(1.9532912,0,0,1,-98.043333,-13)"
+     style="fill:#ed7d31"
+     id="polygon28"
+     points="239.43,192.13 239.43,177.46 152.35,177.46 152.35,192.13 "
+     class="cls-3" />
+  <polygon
+     transform="matrix(1.9532912,0,0,1,-98.043333,-13)"
+     style="fill:#ffd98d"
+     id="polygon30"
+     points="342.54,192.13 342.54,177.46 239.43,177.46 239.43,192.13 "
+     class="cls-4" />
+  <polygon
+     transform="matrix(1.9532912,0,0,1,-98.043333,-13)"
+     style="fill:#e0a500"
+     id="polygon32"
+     points="427,192.13 427,177.46 341.54,177.46 341.54,192.13 "
+     class="cls-5" />
+  <polygon
+     transform="matrix(1.9532912,0,0,1,-98.043333,-13)"
+     style="fill:#b2b2b2"
+     id="polygon34"
+     points="301.5,242.3 301.5,225.54 97.29,225.54 97.29,242.3 "
+     class="cls-2" />
+  <polygon
+     transform="matrix(1.9532912,0,0,1,-98.043333,-13)"
+     style="fill:#ed7d31"
+     id="polygon36"
+     points="360.55,242.3 360.55,225.54 301.5,225.54 301.5,242.3 "
+     class="cls-3" />
+  <polygon
+     transform="matrix(1.9532912,0,0,1,-98.043333,-13)"
+     style="fill:#ffd98d"
+     id="polygon38"
+     points="409.6,242.3 409.6,225.54 360.55,225.54 360.55,242.3 "
+     class="cls-4" />
+  <polygon
+     transform="matrix(1.9532912,0,0,1,-98.043333,-13)"
+     style="fill:#e0a500"
+     id="polygon40"
+     points="427,242.3 427,225.54 408.9,225.54 408.9,242.3 "
+     class="cls-5" />
   <g
-     id="g4729"
-     transform="translate(-19.788478,7.1493655)">
+     transform="translate(-19.788478,2.149365)"
+     id="g4729">
     <polygon
-       transform="matrix(1.0247652,0,0,1.2,46.157131,-43.012)"
-       style="fill:#b2b2b2;fill-rule:evenodd"
+       class="cls-19"
+       points="15.46,40.01 15.46,50.01 3.75,50.01 3.75,40.01 "
        id="polygon92"
-       points="3.75,50.01 3.75,40.01 15.46,40.01 15.46,50.01 "
-       class="cls-19" />
+       style="fill:#b2b2b2;fill-rule:evenodd"
+       transform="matrix(1.0247652,0,0,1.2,46.157131,-43.012)" />
     <text
-       y="17.890635"
-       x="68.840714"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';word-spacing:0px;fill:#595959"
+       class="cls-20"
        id="text124"
-       class="cls-20">College graduate</text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';word-spacing:0px;fill:#595959"
+       x="68.840714"
+       y="17.890635">College graduate</text>
     <polygon
-       transform="matrix(1.025641,0,0,1.2,116.72195,-43.012)"
-       style="fill:#ed7d31;fill-rule:evenodd"
+       class="cls-30"
+       points="131.17,50.01 119.47,50.01 119.47,40.01 131.17,40.01 "
        id="polygon126"
-       points="119.47,40.01 131.17,40.01 131.17,50.01 119.47,50.01 "
-       class="cls-30" />
+       style="fill:#ed7d31;fill-rule:evenodd"
+       transform="matrix(1.025641,0,0,1.2,116.72195,-43.012)" />
     <text
-       y="17.890635"
-       x="256.18365"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#595959"
+       class="cls-20"
        id="text154"
-       class="cls-20">Some college</text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#595959"
+       x="256.18365"
+       y="17.890635">Some college</text>
     <polygon
-       transform="matrix(1.025641,0,0,1.2,171.89812,-43.012)"
-       style="fill:#ffd98d;fill-rule:evenodd"
+       class="cls-37"
+       points="215.99,50.01 215.99,40.01 227.69,40.01 227.69,50.01 "
        id="polygon156"
-       points="227.69,40.01 227.69,50.01 215.99,50.01 215.99,40.01 "
-       class="cls-37" />
+       style="fill:#ffd98d;fill-rule:evenodd"
+       transform="matrix(1.025641,0,0,1.2,171.89812,-43.012)" />
     <text
-       y="17.890635"
-       x="411.65158"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#595959"
+       class="cls-20"
        id="text198"
-       class="cls-20">High school</text>
-    <polygon
-       transform="matrix(1.1952191,0,0,1.2,105.30057,-43.012)"
-       style="fill:#e0a500;fill-rule:evenodd"
-       id="polygon200"
-       points="366.71,40.01 366.71,50.01 356.67,50.01 356.67,40.01 "
-       class="cls-49" />
-    <text
-       y="17.890635"
-       x="548.30133"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#595959"
+       x="411.65158"
+       y="17.890635">High school</text>
+    <polygon
+       class="cls-49"
+       points="356.67,50.01 356.67,40.01 366.71,40.01 366.71,50.01 "
+       id="polygon200"
+       style="fill:#e0a500;fill-rule:evenodd"
+       transform="matrix(1.1952191,0,0,1.2,105.30057,-43.012)" />
+    <text
+       class="cls-20"
        id="text198-4"
-       class="cls-20">Less than high school</text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#595959"
+       x="548.30133"
+       y="17.890635">Less than high school</text>
   </g>
   <text
-     class="cls-20"
-     id="text124-9"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';word-spacing:0px;fill:#111111;fill-opacity:1"
+     y="72.223473"
      x="31.500656"
-     y="77.223473">White</text>
-  <text
-     class="cls-20"
-     id="text124-9-1"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';word-spacing:0px;fill:#111111;fill-opacity:1"
+     id="text124-9"
+     class="cls-20">White</text>
+  <text
+     y="124.50983"
      x="32.926437"
-     y="129.50983">Black</text>
-  <text
-     class="cls-20"
-     id="text124-9-7"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';word-spacing:0px;fill:#111111;fill-opacity:1"
+     id="text124-9-1"
+     class="cls-20">Black</text>
+  <text
+     y="176.92607"
      x="5.2213593"
-     y="181.92607">Hispanic</text>
-  <text
-     class="cls-20"
-     id="text124-9-71"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';word-spacing:0px;fill:#111111;fill-opacity:1"
+     id="text124-9-7"
+     class="cls-20">Hispanic</text>
+  <text
+     y="227.08255"
      x="33.102219"
-     y="232.08255">Asian</text>
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';word-spacing:0px;fill:#111111;fill-opacity:1"
+     id="text124-9-71"
+     class="cls-20">Asian</text>
+  <text
+     class="cls-21"
+     id="text102-5"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';letter-spacing:0em;fill:#555555;fill-opacity:1"
+     x="85.904984"
+     y="257.60721">0%</text>
+  <text
+     class="cls-21"
+     id="text102-9"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';letter-spacing:0em;fill:#555555;fill-opacity:1"
+     x="205.76886"
+     y="257.60721">20%</text>
+  <text
+     class="cls-21"
+     id="text102-4"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';letter-spacing:0em;fill:#555555;fill-opacity:1"
+     x="336.04315"
+     y="257.60721">40%</text>
+  <text
+     class="cls-21"
+     id="text102-90"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';letter-spacing:0em;fill:#555555;fill-opacity:1"
+     x="465.42752"
+     y="257.7272">60%</text>
+  <text
+     class="cls-21"
+     id="text102-91"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';letter-spacing:0em;fill:#555555;fill-opacity:1"
+     x="595.26178"
+     y="257.60721">80%</text>
+  <text
+     class="cls-21"
+     id="text102-7"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';letter-spacing:0em;fill:#555555;fill-opacity:1"
+     x="701.46808"
+     y="257.60721">100%</text>
 </svg>
