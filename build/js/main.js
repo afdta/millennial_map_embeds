@@ -10,12 +10,9 @@ function main(){
   //local
   dir.local("./");
   dir.add("assets", "assets");
-  //dir.add("dirAlias", "path/to/dir");
-
 
   //production data
-  //dir.add("dirAlias", "rackspace-slug/path/to/dir");
-  //dir.add("dirAlias", "rackspace-slug/path/to/dir");
+  //dir.add("assets", "millennial-generation/assets");
   var compat = degradation(document.getElementById("metro-interactive"));
 
 
@@ -23,6 +20,15 @@ function main(){
   if(compat.browser()){
 
     var map_finding = d3.select(".finding-panel");
+
+
+    //add graphics
+    d3.select("#graphic-cgen-gap").append("img").attr("src", dir.url("assets", "cgg.svg"));
+    d3.select("#graphic-race").append("img").attr("src", dir.url("assets", "race.svg"));
+    d3.select("#graphic-edu").append("img").attr("src", dir.url("assets", "edu.svg"));
+    d3.select("#graphic-ownership").append("img").attr("src", dir.url("assets", "ownership.svg"));
+    d3.select("#graphic-poverty").append("img").attr("src", dir.url("assets", "poverty.svg"));
+    d3.select("#graphic-marriage").append("img").attr("src", dir.url("assets", "marriage.svg"));
 
     d3.json(dir.url("assets", "millenials_data.json"), function(error, data){
       if(error){
@@ -32,25 +38,26 @@ function main(){
         var map_wrap = d3.select(".map-container .map-panel");
 
 
-    //build svg filters
-    var defs = map_wrap.append("div").style("height","1px").append("svg").append("defs");
-    var filter = defs.append("filter").attr("id","feBlur").attr("width","150%").attr("height","150%");
-    filter.append("feOffset").attr("result","offsetout").attr("in","SourceGraphic").attr("dx","6").attr("dy","6");
-    filter.append("feColorMatrix").attr("result","matrixout").attr("in","offsetout").attr("type","matrix").attr("values","0.25 0 0 0 0 0 0.25 0 0 0 0 0 0.25 0 0 0 0 0 1 0");
-    filter.append("feGaussianBlur").attr("result","blurout").attr("in","matrixout").attr("stdDeviation","6");
-    filter.append("feBlend").attr("in","SourceGraphic").attr("in2","blurout").attr("mode","normal");
+        //build svg filters
+        var defs = map_wrap.append("div").style("height","1px").append("svg").append("defs");
+        var filter = defs.append("filter").attr("id","feBlur").attr("width","150%").attr("height","150%");
+        filter.append("feOffset").attr("result","offsetout").attr("in","SourceGraphic").attr("dx","6").attr("dy","6");
+        filter.append("feColorMatrix").attr("result","matrixout").attr("in","offsetout").attr("type","matrix").attr("values","0.25 0 0 0 0 0 0.25 0 0 0 0 0 0.25 0 0 0 0 0 1 0");
+        filter.append("feGaussianBlur").attr("result","blurout").attr("in","matrixout").attr("stdDeviation","6");
+        filter.append("feBlend").attr("in","SourceGraphic").attr("in2","blurout").attr("mode","normal");
 
-    var filter2 = defs.append("filter").attr("id","feBlur2").attr("width","150%").attr("height","150%");
-    filter2.append("feOffset").attr("result","offsetout").attr("in","SourceGraphic").attr("dx","2").attr("dy","2");
-    filter2.append("feColorMatrix").attr("result","matrixout").attr("in","offsetout").attr("type","matrix").attr("values","0.25 0 0 0 0 0 0.25 0 0 0 0 0 0.25 0 0 0 0 0 0.5 0");
-    filter2.append("feGaussianBlur").attr("result","blurout").attr("in","matrixout").attr("stdDeviation","5");
-    filter2.append("feBlend").attr("in","SourceGraphic").attr("in2","blurout").attr("mode","normal");      
+        var filter2 = defs.append("filter").attr("id","feBlur2").attr("width","150%").attr("height","150%");
+        filter2.append("feOffset").attr("result","offsetout").attr("in","SourceGraphic").attr("dx","2").attr("dy","2");
+        filter2.append("feColorMatrix").attr("result","matrixout").attr("in","offsetout").attr("type","matrix").attr("values","0.25 0 0 0 0 0 0.25 0 0 0 0 0 0.25 0 0 0 0 0 0.5 0");
+        filter2.append("feGaussianBlur").attr("result","blurout").attr("in","matrixout").attr("stdDeviation","5");
+        filter2.append("feBlend").attr("in","SourceGraphic").attr("in2","blurout").attr("mode","normal");      
 
+        
         var map = mapd(map_wrap.append("div").node()).zoomable(true).responsive(true).zoomLevels(2);
         var us_layer = map.layer().geo(map.geo("us")).attr("filter","url(#feBlur2)");
         var state_layer = map.layer().geo(map.geo("state")).attr("stroke","#999999").attr("fill","#ffffff");
         var metro_layer = map.layer().geo(map.geo("metro").filter(function(d){return d.t100==1}))
-                              .attr("stroke","#999999").attr("fill-opacity","0.9").data(data, "CBSA_Code");  
+                              .attr("stroke","#999999").attr("fill-opacity","0.9").data(data, "CBSA_Code").attr("r","7");  
 
         var title = d3.select("#map-title"); //map.title().append("p").style("font-weight","bold");
 
@@ -58,11 +65,10 @@ function main(){
         var legend_wrap = map_wrap.append("div").style("margin","0.5rem auto 0.25rem auto").classed("c-fix",true)
                                   .append("div").style("float","right").style("border-top","1px solid #aaaaaa")
                                   .style("padding","10px").classed("map-legend",true); 
+
         map.legend.wrap(legend_wrap.node()); 
 
-        //var pal = ['#c7e9c0','#74c476','#41ab5d','#238b45','#005a32'];
         var pal = ['#c6dbef','#9ecae1','#6baed6','#3182bd','#08519c'];
-        //var pal = ['#89e2e9', '#32cdd9', "#1f9fa9", "#17767e", "#0f4e53"]
         
         var map_var = null;                      
         var map_scenes = {
@@ -169,8 +175,8 @@ function main(){
           return '<p class="no-select" style="font-size:0.85rem;text-transform:uppercase;text-align:center;">' + map_scenes[d].button + '</p>';
         })        
 
-        var poprank = format.ranker(data.map(function(d){return d.MPop15}));
-        var sharerank = format.ranker(data.map(function(d){return d.MShare15}));
+        //var poprank = format.ranker(data.map(function(d){return d.MPop15}));
+        //var sharerank = format.ranker(data.map(function(d){return d.MShare15}));
 
         var tip_code = null;
         var scale = d3.scaleLinear().domain([0,100]).range([10,90]); //range in %
