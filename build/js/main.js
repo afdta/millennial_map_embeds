@@ -8,11 +8,11 @@ function main(){
 
 
   //local
-  dir.local("./");
-  dir.add("assets", "assets");
+  //dir.local("./");
+  //dir.add("assets", "assets");
 
   //production data
-  //dir.add("assets", "millennial-generation/assets");
+  dir.add("assets", "millennial-generation/assets");
   var compat = degradation(document.getElementById("metro-interactive"));
 
 
