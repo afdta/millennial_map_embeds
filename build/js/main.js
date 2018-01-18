@@ -19,7 +19,7 @@ function main(){
   //browser degradation
   if(compat.browser()){
 
-    var map_finding = d3.select(".finding-panel");
+    var map_finding = d3.select("#finding-panel");
 
 
     //add graphics
@@ -32,10 +32,11 @@ function main(){
 
     d3.json(dir.url("assets", "millenials_data.json"), function(error, data){
       if(error){
+        //no-op
+      } 
+      else{
 
-      }else{
-
-        var map_wrap = d3.select(".map-container .map-panel");
+        var map_wrap = d3.select("#map-panel");
 
 
         //build svg filters
@@ -57,9 +58,9 @@ function main(){
         var us_layer = map.layer().geo(map.geo("us")).attr("filter","url(#feBlur2)");
         var state_layer = map.layer().geo(map.geo("state")).attr("stroke","#999999").attr("fill","#ffffff");
         var metro_layer = map.layer().geo(map.geo("metro").filter(function(d){return d.t100==1}))
-                              .attr("stroke","#999999").attr("fill-opacity","0.9").data(data, "CBSA_Code").attr("r","7");  
+                              .attr("stroke","#999999").attr("fill-opacity","0.9").data(data, "CBSA_Code").attr("r","8");  
 
-        var title = d3.select("#map-title"); //map.title().append("p").style("font-weight","bold");
+        var title = d3.select("#map-title");
 
         //render map to div below map
         var legend_wrap = map_wrap.append("div").style("margin","0.5rem auto 0.25rem auto").classed("c-fix",true)
@@ -70,7 +71,7 @@ function main(){
 
         var pal = ['#c6dbef','#9ecae1','#6baed6','#3182bd','#08519c'];
         
-        var map_var = null;                      
+        var map_var = null;  //used to highlight chart in tooltip                    
         var map_scenes = {
           "pop":{
               var:"MShare15",
@@ -84,17 +85,14 @@ function main(){
 "Among metropolitan areas, the 15 metropolitan areas with the highest shares of millennials are all in the fast-growing South and West, such as Austin, Colorado Springs, San Diego, and Los Angeles. Listed within this report amongst states, the District of Columbia is a sizeable 34.8 percent millennial. The lowest millennial shares tend to be in Florida, such as Tampa and Miami, in the Northeast, such as Pittsburgh, and in the Midwest, such as Cleveland and Detroit."],
 
               draw: function(){
-                var fill = metro_layer.aes.fill("MShare15").quantile(pal);
-                //var r = metro_layer.aes.r("MPop15").radii(0,30);     
+                var fill = metro_layer.aes.fill("MShare15").quantile(pal);    
                 map.legend.swatch(fill.ticks(), function(v){
                   return format.num0(v[0]) + "% to " + format.num0(v[1]) + "%";
                 });  
-                //map.legend.bubble(r.ticks([100000, 500000, 1000000]), format.num0, "Number of Millenials, 2015");
-                //tooltip  
-
                 map.draw();  
               }
             },
+
           "white":{
             var:"White",
             varname:'Share of millennials who are <b>white</b>, 2015',
@@ -105,15 +103,13 @@ function main(){
             ],
             draw: function(){
                 var fill = metro_layer.aes.fill("White").quantile(pal);
-                //var r = metro_layer.aes.r("White").radii(0,30);   
                 map.legend.swatch(fill.ticks(), function(v){
                   return format.num0(v[0]) + "% to " + format.num0(v[1]) + "%";
                 });  
-                //map.legend.bubble(r.ticks([100000, 500000, 1000000]), format.num0, "Number of Millenials, 2015");  
-
                 map.draw();     
               }
           },
+
           "black":{
             var:"Black",
             varname:'Share of millennials who are <b>black</b>, 2015',
@@ -124,31 +120,27 @@ function main(){
             ],
             draw: function(){
                 var fill = metro_layer.aes.fill("Black").quantile(pal);
-                //var r = metro_layer.aes.r("White").radii(0,30);   
                 map.legend.swatch(fill.ticks(), function(v){
                   return format.num0(v[0]) + "% to " + format.num0(v[1]) + "%";
                 });  
-                //map.legend.bubble(r.ticks([100000, 500000, 1000000]), format.num0, "Number of Millenials, 2015");  
-
                 map.draw();     
               }
           },
+
           "hispanic":{
             var:"Hispanic",
             varname:'Share of millennials who are <b>Hispanic</b>, 2015',
             button:"Hispanic",
             text: ["New York and Los Angeles are major settlement areas for Hispanic millennials. In general, Hispanic millennials settle more often in Southern areas—Houston, Miami, and Dallas—along with Riverside, Calif., and Chicago. Additionally, New York, Los Angeles, and Houston are top gainers for Hispanic millennials."],
             draw: function(){
-                var fill = metro_layer.aes.fill("Hispanic").quantile(pal);
-                //var r = metro_layer.aes.r("White").radii(0,30);   
+                var fill = metro_layer.aes.fill("Hispanic").quantile(pal);  
                 map.legend.swatch(fill.ticks(), function(v){
                   return format.num0(v[0]) + "% to " + format.num0(v[1]) + "%";
                 });  
-                //map.legend.bubble(r.ticks([100000, 500000, 1000000]), format.num0, "Number of Millenials, 2015");  
-
                 map.draw();     
               }
           },
+
           "asian":{
             var:"Asian",
             varname:'Share of millennials who are <b>Asian</b>, 2015',
@@ -156,12 +148,9 @@ function main(){
             text: ["New York and Los Angeles are major settlement areas for Asian millennials. In general, Asian millennials settle more often in the West, including in San Francisco, San Jose, and Seattle, along with Chicago and Washington, D.C. Additionally, New York, Los Angeles, and Houston are top gainers for Asian millennials."],
             draw: function(){
                 var fill = metro_layer.aes.fill("Asian").quantile(pal);
-                //var r = metro_layer.aes.r("White").radii(0,30);   
                 map.legend.swatch(fill.ticks(), function(v){
                   return format.num0(v[0]) + "% to " + format.num0(v[1]) + "%";
                 });  
-                //map.legend.bubble(r.ticks([100000, 500000, 1000000]), format.num0, "Number of Millenials, 2015");  
-
                 map.draw();     
               }
           }
@@ -218,15 +207,14 @@ function main(){
             var texts = g.select("text").text(function(d){return d.label + " (" + format.num1(d.share) + "%)"})
                           .style("font-weight", function(d){return d.label === map_var ? "bold" : "normal"});
 
-
-            //console.log(obs);
             tip_code = obs.CBSA_Code;
+
+            analytics('hover', 'share_of_millennials');
           }
-
-
         }
 
         metro_layer.tooltips(tooltip);    
+
 
         function button_select(d){
           map_buttons.classed("selected", function(dd, ii){
@@ -245,16 +233,36 @@ function main(){
 
         }         
 
-        map_buttons.on("mousedown", button_select);
-       
+        map_buttons.on("mousedown", function(d){
+          button_select(d);
+
+          analytics('menu_tap', 'share_of_millennials');
+        });
+
+        //initialize map       
         button_select("pop");    
 
-      }
-    })
+      } //end draw block -- no error in data retrieval
+    
+    }); //end json data callback
 
+  } //end compat browser block
 
+  //ANALYTICS
+  function analytics(action, label){
+    
+    //default arg for label is 'null'
+    if(arguments.length < 2 || label == null){
+      label = 'null';
+    }
+
+    dataLayer.push({
+                    'event': 'Interactive',
+                    'category': 'Interactive',
+                    'action': action,
+                    'label': label
+                  });
   }
-
 
 } //close main()
 
