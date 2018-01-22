@@ -79,7 +79,7 @@ function main(){
               button:"Overall",
               text:[
                 "This interactive map presents statistics for the race/ethnicity breakdown and overall millennial population share for the nation’s 100 largest metropolitan areas. <b><em>Note: Hover over each metro area to view relevant statistics.</em></b>",
-                "Racial and ethnic minorities make up more than half of the millennial population in 10 states, including California, Texas, Arizona, Florida, and New Jersey. In another 10 states, including New York, Illinois, and North and South Carolina, minorities comprise more than 40 percent of millennial residents. Notably, the District of Columbia is a sizeable 34.8 percent millennial.",
+                "Racial and ethnic minorities make up more than half of the millennial population in 10 states, including California, Texas, Arizona, Florida, and New Jersey. In another 10 states, including New York, Illinois, and North and South Carolina, minorities comprise more than 40 percent of millennial residents.",
                 "Among metropolitan areas, the 15 with the highest shares of millennials are all in the fast-growing South and West, such as Austin, San Diego, and Los Angeles. The lowest millennial shares tend to be in Florida, such as Tampa and Miami, in the Northeast, such as Pittsburgh, and in the Midwest, such as Cleveland and Detroit."
                 ],
               draw: function(){
