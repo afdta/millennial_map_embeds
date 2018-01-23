@@ -5,12 +5,12 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   height="300"
-   width="750"
-   version="1.1"
-   viewBox="0 0 750 300"
+   id="Layer_1"
    data-name="Layer 1"
-   id="Layer_1">
+   viewBox="0 0 750 300"
+   version="1.1"
+   width="750"
+   height="300">
   <metadata
      id="metadata221">
     <rdf:RDF>
@@ -31,297 +31,297 @@
   <title
      id="title6">Millennials - static graphics v2 - Separate artboards</title>
   <g
-     id="g4581"
-     transform="translate(-26.099785)">
+     transform="translate(-26.099785)"
+     id="g4581">
     <g
-       id="g4782"
-       transform="translate(57.999997,-26.548799)">
+       transform="translate(57.999997,-26.548799)"
+       id="g4782">
       <polygon
-         transform="matrix(0.79417604,0,0,0.79575597,-163.4791,29.005459)"
-         style="fill:#b2b2b2;fill-rule:evenodd"
-         id="polygon8"
+         class="cls-1"
          points="230.47,13.35 230.47,28.43 215.36,28.43 215.36,13.35 "
-         class="cls-1" />
+         id="polygon8"
+         style="fill:#b2b2b2;fill-rule:evenodd"
+         transform="matrix(0.79417604,0,0,0.79575597,-163.4791,29.005459)" />
       <text
-         y="51.588802"
-         x="25.185585"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#555555;fill-opacity:1"
+         class="cls-2"
          id="text20"
-         class="cls-2">
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#555555;fill-opacity:1"
+         x="25.185585"
+         y="51.588802">
         <tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';letter-spacing:0.03em;fill:#555555;fill-opacity:1"
+           class="cls-3"
            id="tspan10"
-           class="cls-3">White</tspan>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';letter-spacing:0.03em;fill:#555555;fill-opacity:1">White</tspan>
       </text>
     </g>
     <g
-       id="g4777"
-       transform="translate(51.209876,-26.548799)">
+       transform="translate(51.209876,-26.548799)"
+       id="g4777">
       <text
-         y="51.588802"
-         x="116.14465"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';letter-spacing:0.04em;fill:#555555;fill-opacity:1"
+         class="cls-7"
          id="text30"
-         class="cls-7">Black</text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';letter-spacing:0.04em;fill:#555555;fill-opacity:1"
+         x="116.14465"
+         y="51.588802">Black</text>
       <polygon
-         transform="matrix(0.79417604,0,0,0.79575597,-126.66671,29.005459)"
-         style="fill:#5b5b5b;fill-rule:evenodd"
-         id="polygon32"
+         class="cls-11"
          points="284.27,13.35 299.38,13.35 299.38,28.43 284.27,28.43 "
-         class="cls-11" />
+         id="polygon32"
+         style="fill:#5b5b5b;fill-rule:evenodd"
+         transform="matrix(0.79417604,0,0,0.79575597,-126.66671,29.005459)" />
     </g>
     <g
-       id="g4758"
-       transform="translate(5.9999979,-26.548799)">
+       transform="translate(5.9999979,-26.548799)"
+       id="g4758">
       <text
-         y="51.128799"
-         x="661.22455"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#555555;fill-opacity:1"
+         class="cls-2"
          id="text50"
-         class="cls-2">Hispanic</text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#555555;fill-opacity:1"
+         x="661.22455"
+         y="51.128799">Hispanic</text>
       <polygon
-         transform="matrix(0.79470199,0,0,0.79470199,96.331999,29.035424)"
-         style="fill:#2fc4f2;fill-rule:evenodd"
-         id="polygon52"
+         class="cls-15"
          points="704.48,28.43 689.38,28.43 689.38,13.35 704.48,13.35 "
-         class="cls-15" />
+         id="polygon52"
+         style="fill:#2fc4f2;fill-rule:evenodd"
+         transform="matrix(0.79470199,0,0,0.79470199,96.331999,29.035424)" />
     </g>
     <g
-       id="g4773"
-       transform="translate(44.829151,-26.548799)">
+       transform="translate(44.829151,-26.548799)"
+       id="g4773">
       <text
-         y="51.588802"
-         x="203.57996"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#555555;fill-opacity:1"
+         class="cls-2"
          id="text98"
-         class="cls-2">
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#555555;fill-opacity:1"
+         x="203.57996"
+         y="51.588802">
         <tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';letter-spacing:0em;fill:#555555;fill-opacity:1"
+           class="cls-16"
            id="tspan54"
-           class="cls-16">Am. Indian/Alaska Native</tspan>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';letter-spacing:0em;fill:#555555;fill-opacity:1">Am. Indian/Alaska Native</tspan>
       </text>
       <polygon
-         transform="matrix(0.79470199,0,0,0.79470199,-92.584036,29.035424)"
-         style="fill:#ed7d31;fill-rule:evenodd"
-         id="polygon100"
+         class="cls-25"
          points="350.5,13.35 365.6,13.35 365.6,28.43 350.5,28.43 "
-         class="cls-25" />
+         id="polygon100"
+         style="fill:#ed7d31;fill-rule:evenodd"
+         transform="matrix(0.79470199,0,0,0.79470199,-92.584036,29.035424)" />
     </g>
     <g
-       id="g4768"
-       transform="translate(20.943086,-26.548799)">
+       transform="translate(20.943086,-26.548799)"
+       id="g4768">
       <text
-         y="51.128799"
-         x="466.07837"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#555555;fill-opacity:1"
+         class="cls-2"
          id="text112"
-         class="cls-2">
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#555555;fill-opacity:1"
+         x="466.07837"
+         y="51.128799">
         <tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';letter-spacing:0em;fill:#555555;fill-opacity:1"
+           class="cls-16"
            id="tspan102"
-           class="cls-16">Asian</tspan>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';letter-spacing:0em;fill:#555555;fill-opacity:1">Asian</tspan>
       </text>
       <polygon
-         transform="matrix(0.79417604,0,0,0.79417604,24.921307,29.050376)"
-         style="fill:#70ad47;fill-rule:evenodd"
-         id="polygon114"
+         class="cls-27"
          points="548.4,28.43 533.29,28.43 533.29,13.35 548.4,13.35 "
-         class="cls-27" />
+         id="polygon114"
+         style="fill:#70ad47;fill-rule:evenodd"
+         transform="matrix(0.79417604,0,0,0.79417604,24.921307,29.050376)" />
     </g>
     <g
-       id="g4763"
-       transform="translate(14.690061,-26.548799)">
+       transform="translate(14.690061,-26.548799)"
+       id="g4763">
       <text
-         y="50.788799"
-         x="551.27673"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#555555;fill-opacity:1"
+         class="cls-2"
          id="text132"
-         class="cls-2">
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#555555;fill-opacity:1"
+         x="551.27673"
+         y="50.788799">
         <tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';letter-spacing:-0.01em;fill:#555555;fill-opacity:1"
+           class="cls-28"
            id="tspan116"
-           class="cls-28">2+ Races</tspan>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';letter-spacing:-0.01em;fill:#555555;fill-opacity:1">2+ Races</tspan>
       </text>
       <polygon
-         transform="matrix(0.79470199,0,0,0.79470199,57.301938,29.035424)"
-         style="fill:#ffc000;fill-rule:evenodd"
-         id="polygon134"
+         class="cls-33"
          points="600.62,28.43 600.62,13.35 615.72,13.35 615.72,28.43 "
-         class="cls-33" />
+         id="polygon134"
+         style="fill:#ffc000;fill-rule:evenodd"
+         transform="matrix(0.79470199,0,0,0.79470199,57.301938,29.035424)" />
     </g>
   </g>
   <text
-     y="79.272957"
-     x="4.3400002"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#111111;fill-opacity:1"
+     class="cls-40"
      id="text174"
-     class="cls-40">
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#111111;fill-opacity:1"
+     x="4.3400002"
+     y="79.272957">
     <tspan
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';letter-spacing:-0.02em;fill:#111111;fill-opacity:1"
+       class="cls-41"
        id="tspan148"
-       class="cls-41">Seniors (Ages 55+)</tspan>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';letter-spacing:-0.02em;fill:#111111;fill-opacity:1">Seniors (Ages 55+)</tspan>
   </text>
   <text
-     y="78.532959"
-     x="605.55389"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#555555;fill-opacity:1"
+     class="cls-2"
      id="text184"
-     class="cls-2">0.6%</text>
-  <text
-     y="78.532959"
-     x="658.25391"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#555555;fill-opacity:1"
+     x="605.55389"
+     y="78.532959">0.6%</text>
+  <text
+     class="cls-2"
      id="text188"
-     class="cls-2">0.8%</text>
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#555555;fill-opacity:1"
+     x="658.25391"
+     y="78.532959">0.8%</text>
   <text
-     y="195.59033"
-     x="4.3400002"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#111111;fill-opacity:1"
+     class="cls-40"
      id="text204"
-     class="cls-40">Millennials (Ages 18–34)</text>
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#111111;fill-opacity:1"
+     x="4.3400002"
+     y="195.59033">Millennials (Ages 18–34)</text>
   <text
-     y="195.59033"
-     x="498.03375"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#555555;fill-opacity:1"
+     class="cls-2"
      id="text210"
-     class="cls-2">0.8%</text>
-  <text
-     y="195.59033"
-     x="568.86383"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#555555;fill-opacity:1"
+     x="498.03375"
+     y="195.59033">0.8%</text>
+  <text
+     class="cls-2"
      id="text214"
-     class="cls-2">2.3%</text>
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#555555;fill-opacity:1"
+     x="568.86383"
+     y="195.59033">2.3%</text>
   <g
-     transform="translate(0,-39)"
-     id="g4820">
+     id="g4820"
+     transform="translate(0,-39)">
     <polygon
-       class="cls-34"
-       points="4.34,217.08 4.34,161.72 565.5,161.72 565.5,217.08 "
-       id="polygon192"
+       transform="matrix(0.6984627,0,0,1.108995,1.3086719,62.356341)"
        style="fill:#b2b2b2"
-       transform="matrix(0.6984627,0,0,1.108995,1.3086719,62.356341)" />
+       id="polygon192"
+       points="4.34,217.08 4.34,161.72 565.5,161.72 565.5,217.08 "
+       class="cls-34" />
     <polygon
-       class="cls-35"
-       points="574.99,217.08 574.99,161.72 718.88,161.72 718.88,217.08 "
-       id="polygon194"
+       transform="matrix(0.6984627,0,0,1.108995,1.3086719,62.356341)"
        style="fill:#5b5b5b"
-       transform="matrix(0.6984627,0,0,1.108995,1.3086719,62.356341)" />
+       id="polygon194"
+       points="574.99,217.08 574.99,161.72 718.88,161.72 718.88,217.08 "
+       class="cls-35" />
     <polygon
-       class="cls-36"
-       points="728.37,217.08 728.37,161.72 735.56,161.72 735.56,217.08 "
-       id="polygon196"
+       transform="matrix(0.6984627,0,0,1.108995,1.3086719,62.356341)"
        style="fill:#ed7d31"
-       transform="matrix(0.6984627,0,0,1.108995,1.3086719,62.356341)" />
+       id="polygon196"
+       points="728.37,217.08 728.37,161.72 735.56,161.72 735.56,217.08 "
+       class="cls-36" />
     <polygon
-       class="cls-37"
-       points="745.05,217.08 745.05,161.72 816.8,161.72 816.8,217.08 "
-       id="polygon198"
+       transform="matrix(0.6984627,0,0,1.108995,1.3086719,62.356341)"
        style="fill:#70ad47"
-       transform="matrix(0.6984627,0,0,1.108995,1.3086719,62.356341)" />
+       id="polygon198"
+       points="745.05,217.08 745.05,161.72 816.8,161.72 816.8,217.08 "
+       class="cls-37" />
     <polygon
-       class="cls-38"
-       points="826.29,217.08 826.29,161.72 847.87,161.72 847.87,217.08 "
-       id="polygon200"
+       transform="matrix(0.6984627,0,0,1.108995,1.3086719,62.356341)"
        style="fill:#ffc000"
-       transform="matrix(0.6984627,0,0,1.108995,1.3086719,62.356341)" />
+       id="polygon200"
+       points="826.29,217.08 826.29,161.72 847.87,161.72 847.87,217.08 "
+       class="cls-38" />
     <polygon
-       class="cls-39"
-       points="857.36,217.08 857.36,161.72 1066,161.72 1066,217.08 "
-       id="polygon202"
+       transform="matrix(0.6984627,0,0,1.108995,1.3086719,62.356341)"
        style="fill:#2fc4f2"
-       transform="matrix(0.6984627,0,0,1.108995,1.3086719,62.356341)" />
+       id="polygon202"
+       points="857.36,217.08 857.36,161.72 1066,161.72 1066,217.08 "
+       class="cls-39" />
     <text
-       class="cls-48"
-       id="text206"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#555555;fill-opacity:1"
+       y="279.82999"
        x="173.43561"
-       y="279.82999">55.8%</text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#555555;fill-opacity:1"
+       id="text206"
+       class="cls-48">55.8%</text>
     <text
-       class="cls-48"
-       id="text208"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#ffffff;fill-opacity:1"
+       y="279.39999"
        x="425.70956"
-       y="279.39999">13.9%</text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#ffffff;fill-opacity:1"
+       id="text208"
+       class="cls-48">13.9%</text>
     <text
-       class="cls-48"
-       id="text212"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#555555;fill-opacity:1"
+       y="279.45999"
        x="525.27863"
-       y="279.45999">6.4%</text>
-    <text
-       class="cls-48"
-       id="text216"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#555555;fill-opacity:1"
+       id="text212"
+       class="cls-48">6.4%</text>
+    <text
+       y="279.39999"
        x="646.20721"
-       y="279.39999">20.8%</text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#555555;fill-opacity:1"
+       id="text216"
+       class="cls-48">20.8%</text>
   </g>
   <g
-     transform="translate(0,-39)"
-     id="g4833">
+     id="g4833"
+     transform="translate(0,-39)">
     <polygon
-       class="cls-34"
-       points="759.75,122.92 4.34,122.92 4.34,67.57 759.75,67.57 "
-       id="polygon136"
+       transform="matrix(0.6984627,0,0,1.108995,1.3086719,50.618766)"
        style="fill:#b2b2b2"
-       transform="matrix(0.6984627,0,0,1.108995,1.3086719,50.618766)" />
+       id="polygon136"
+       points="759.75,122.92 4.34,122.92 4.34,67.57 759.75,67.57 "
+       class="cls-34" />
     <polygon
-       class="cls-35"
-       points="871.36,122.92 770.64,122.92 770.64,67.57 871.36,67.57 "
-       id="polygon138"
+       transform="matrix(0.6984627,0,0,1.108995,1.3086719,50.618766)"
        style="fill:#5b5b5b"
-       transform="matrix(0.6984627,0,0,1.108995,1.3086719,50.618766)" />
+       id="polygon138"
+       points="871.36,122.92 770.64,122.92 770.64,67.57 871.36,67.57 "
+       class="cls-35" />
     <polygon
-       class="cls-36"
-       points="889.45,122.92 882.25,122.92 882.25,67.57 889.45,67.57 "
-       id="polygon140"
+       transform="matrix(0.6984627,0,0,1.108995,1.3086719,50.618766)"
        style="fill:#ed7d31"
-       transform="matrix(0.6984627,0,0,1.108995,1.3086719,50.618766)" />
+       id="polygon140"
+       points="889.45,122.92 882.25,122.92 882.25,67.57 889.45,67.57 "
+       class="cls-36" />
     <polygon
-       class="cls-37"
-       points="943.5,122.92 900.33,122.92 900.33,67.57 943.5,67.57 "
-       id="polygon142"
+       transform="matrix(0.6984627,0,0,1.108995,1.3086719,50.618766)"
        style="fill:#70ad47"
-       transform="matrix(0.6984627,0,0,1.108995,1.3086719,50.618766)" />
+       id="polygon142"
+       points="943.5,122.92 900.33,122.92 900.33,67.57 943.5,67.57 "
+       class="cls-37" />
     <polygon
-       class="cls-38"
-       points="968.78,122.92 954.39,122.92 954.39,67.57 968.78,67.57 "
-       id="polygon144"
+       transform="matrix(0.6984627,0,0,1.108995,1.3086719,50.618766)"
        style="fill:#ffc000"
-       transform="matrix(0.6984627,0,0,1.108995,1.3086719,50.618766)" />
+       id="polygon144"
+       points="968.78,122.92 954.39,122.92 954.39,67.57 968.78,67.57 "
+       class="cls-38" />
     <polygon
-       class="cls-39"
-       points="1066,122.92 979.67,122.92 979.67,67.57 1066,67.57 "
-       id="polygon146"
+       transform="matrix(0.6984627,0,0,1.108995,1.3086719,50.618766)"
        style="fill:#2fc4f2"
-       transform="matrix(0.6984627,0,0,1.108995,1.3086719,50.618766)" />
+       id="polygon146"
+       points="1066,122.92 979.67,122.92 979.67,67.57 1066,67.57 "
+       class="cls-39" />
     <text
-       class="cls-48"
-       id="text180"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#555555;fill-opacity:1"
+       y="163.245"
        x="253.69127"
-       y="163.245">
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#555555;fill-opacity:1"
+       id="text180"
+       class="cls-48">
       <tspan
-         class="cls-9"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';letter-spacing:-0.01em;fill:#555555;fill-opacity:1"
          id="tspan176"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';letter-spacing:-0.01em;fill:#555555;fill-opacity:1">70.0%</tspan>
+         class="cls-9">75.0%</tspan>
     </text>
     <text
-       class="cls-48"
-       id="text182"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#ffffff;fill-opacity:1"
+       y="163.245"
        x="547.28748"
-       y="163.245">10.0%</text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#ffffff;fill-opacity:1"
+       id="text182"
+       class="cls-48">10.0%</text>
     <text
-       class="cls-48"
-       id="text186"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#555555;fill-opacity:1"
+       y="163.30499"
        x="626.2049"
-       y="163.30499">4.6%</text>
-    <text
-       class="cls-48"
-       id="text190"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#555555;fill-opacity:1"
+       id="text186"
+       class="cls-48">4.6%</text>
+    <text
+       y="163.245"
        x="694.26373"
-       y="163.245">9.1%</text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#555555;fill-opacity:1"
+       id="text190"
+       class="cls-48">9.1%</text>
   </g>
 </svg>
