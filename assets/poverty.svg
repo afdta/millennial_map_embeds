@@ -7,14 +7,29 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   height="250"
-   width="750"
-   version="1.1"
-   viewBox="0 0 750 250"
-   data-name="Layer 1"
    id="Layer_1"
+   data-name="Layer 1"
+   viewBox="0 0 750 250"
+   version="1.1"
    sodipodi:docname="poverty.svg"
-   inkscape:version="0.92.1 r15371">
+   width="750"
+   height="250"
+   inkscape:version="0.92.1 r15371"
+   inkscape:export-filename="/home/alec/Projects/Brookings/millenials/assets/poverty.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
+  <metadata
+     id="metadata79">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Poverty new SVG</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -24,226 +39,182 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1179"
-     inkscape:window-height="728"
-     id="namedview42"
+     inkscape:window-width="1867"
+     inkscape:window-height="1056"
+     id="namedview77"
      showgrid="false"
-     inkscape:zoom="0.78505747"
-     inkscape:cx="388.84615"
-     inkscape:cy="100.38462"
-     inkscape:window-x="63"
-     inkscape:window-y="34"
-     inkscape:window-maximized="0"
+     inkscape:zoom="0.94962688"
+     inkscape:cx="542.67462"
+     inkscape:cy="5.6171672"
+     inkscape:window-x="1973"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
      inkscape:current-layer="Layer_1" />
-  <metadata
-     id="metadata91">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title>Millennials - static graphics v1 revised - Separate artboards</dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
   <defs
      id="defs4">
     <style
-       id="style2">.cls-1{fill:#e0a500;}.cls-1,.cls-3{fill-rule:evenodd;}.cls-2{fill:none;stroke:#fff;stroke-linejoin:round;stroke-width:2px;}.cls-3{fill:#b2b2b2;}.cls-4,.cls-5{fill:#fff;}.cls-5{font-size:12px;}.cls-15,.cls-5{font-family:Interstate-Light, Interstate-Light;}.cls-12,.cls-15,.cls-6,.cls-7{font-size:11.99px;}.cls-12,.cls-6,.cls-7{font-family:Interstate-Bold, Interstate-Bold;}.cls-7{letter-spacing:0.03em;}.cls-8{letter-spacing:-0.02em;}.cls-9{letter-spacing:0.02em;}.cls-10{letter-spacing:0em;}.cls-11{letter-spacing:0em;}.cls-12{letter-spacing:0em;}.cls-13{letter-spacing:0.02em;}.cls-14{letter-spacing:-0.06em;}.cls-15{fill:#595959;}</style>
+       id="style2">.cls-1,.cls-7{fill:#b2b2b2;}.cls-1,.cls-2{stroke:#fff;stroke-miterlimit:10;stroke-width:2px;}.cls-2,.cls-9{fill:#e0a500;}.cls-3,.cls-5,.cls-6{fill:#fff;}.cls-10,.cls-15,.cls-4{font-size:11px;}.cls-10,.cls-15,.cls-4,.cls-5,.cls-8{font-family:Georgia, Georgia;}.cls-5,.cls-6{font-size:12px;}.cls-6{font-family:Interstate-Light, Interstate-Light;}.cls-7,.cls-9{fill-rule:evenodd;}.cls-8{font-size:11.99px;fill:#595959;}.cls-10{letter-spacing:0.03em;}.cls-11{letter-spacing:-0.03em;}.cls-12{letter-spacing:0.02em;}.cls-13{letter-spacing:0em;}.cls-14{letter-spacing:0em;}.cls-15{letter-spacing:0em;}.cls-16{letter-spacing:0.03em;}.cls-17{letter-spacing:-0.06em;}.cls-18{letter-spacing:0.02em;}.cls-19{letter-spacing:-0.02em;}</style>
   </defs>
   <title
-     id="title6">Millennials - static graphics v1 revised - Separate artboards</title>
+     id="title6">Poverty new SVG</title>
+  <polygon
+     class="cls-7"
+     points="272.34,13.26 272.34,23.26 260.63,23.26 260.63,13.26 "
+     id="polygon20"
+     style="fill:#b2b2b2;fill-rule:evenodd"
+     transform="matrix(1.1955594,0,0,1.2,17.401354,-4.0720011)" />
+  <text
+     class="cls-8"
+     id="text22"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#555555;fill-opacity:1"
+     x="347.53"
+     y="23.386">Not in poverty</text>
+  <polygon
+     class="cls-9"
+     points="144.34,23.26 132.63,23.26 132.63,13.26 144.34,13.26 "
+     id="polygon24"
+     style="fill:#e0a500;fill-rule:evenodd"
+     transform="matrix(1.1955594,0,0,1.2,42.432957,-4.072)" />
+  <text
+     class="cls-8"
+     id="text26"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#555555;fill-opacity:1"
+     x="219.53"
+     y="23.386">In poverty</text>
   <path
-     style="fill:#e0a500;fill-rule:evenodd;stroke-width:1.55992568"
+     class="cls-1"
+     d="m 468.17862,138.14332 81.02377,-21.70306 A 83.87943,83.87943 0 1 1 446.47555,57.134997 82.953268,82.953268 0 0 1 468.17862,54.27933 Z"
      id="path8"
-     d="m 467.14048,54.39887 a 86.841064,86.841064 0 0 1 36.48666,165.72651 l -36.48666,-78.85425 z"
-     class="cls-1" />
+     inkscape:connector-curvature="0"
+     style="fill:#b2b2b2;stroke:#ffffff;stroke-width:3.08720756px;stroke-miterlimit:10" />
   <path
-     style="fill:none;stroke:#ffffff;stroke-width:3.11985135px;stroke-linejoin:round"
+     class="cls-2"
+     d="M 468.17862,138.14332 V 54.263894 c 38.91425,0 71.00578,24.574173 81.02377,62.160926 z"
      id="path10"
-     d="m 467.14048,54.39887 a 86.841064,86.841064 0 0 1 36.48666,165.72651 l -36.48666,-78.85425 z"
-     class="cls-2" />
-  <path
-     style="fill:#b2b2b2;fill-rule:evenodd;stroke-width:1.55992568"
-     id="path12"
-     d="M 503.62714,220.12538 A 86.887861,86.887861 0 1 1 467.14048,54.39887 v 86.87226 z"
-     class="cls-3" />
-  <path
-     style="fill:none;stroke:#ffffff;stroke-width:3.11985135px;stroke-linejoin:round"
-     id="path14"
-     d="M 503.62714,220.12538 A 86.887861,86.887861 0 1 1 467.14048,54.39887 v 86.87226 z"
-     class="cls-2" />
+     inkscape:connector-curvature="0"
+     style="fill:#e0a500;stroke:#ffffff;stroke-width:3.08720756px;stroke-miterlimit:10" />
   <circle
-     style="fill:#ffffff;stroke-width:1.55992568"
-     id="circle16"
-     r="47.125355"
-     cy="141.27113"
-     cx="467.14047"
-     class="cls-4" />
+     class="cls-3"
+     cx="468.17862"
+     cy="138.15875"
+     r="46.632271"
+     id="circle12"
+     style="fill:#ffffff;stroke-width:1.54360378" />
   <text
-     y="91.228714"
-     x="472.66263"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#ffffff;stroke-width:1.55992568"
+     class="cls-4"
+     id="text14"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#111111;fill-opacity:1;stroke-width:1.54360378"
+     x="433.20743"
+     y="144.24055">Hispanic</text>
+  <text
+     class="cls-5"
+     id="text16"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#ffffff;stroke-width:1.54360378"
+     x="476.19659"
+     y="85.645363">21%</text>
+  <text
+     class="cls-6"
      id="text18"
-     class="cls-5">43%</text>
-  <text
-     y="147.41727"
-     x="432.06436"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#111111;fill-opacity:1;stroke-width:1.55992568"
-     id="text20"
-     class="cls-6">Hispanic</text>
+     style="font-size:18px;font-family:Interstate-Light, Interstate-Light;fill:#ffffff;stroke-width:1.54360378"
+     x="659.24591"
+     y="85.645363">32%</text>
   <path
-     style="fill:#e0a500;fill-rule:evenodd;stroke-width:1.55992568"
-     id="path22"
-     d="m 98.514435,54.61726 a 86.747468,86.747468 0 0 1 86.185895,97.63575 L 98.483236,141.33353 V 54.61726 Z"
-     class="cls-1" />
-  <path
-     style="fill:none;stroke:#ffffff;stroke-width:3.11985135px;stroke-linejoin:round"
-     id="path24"
-     d="m 98.514435,54.61726 a 86.747468,86.747468 0 0 1 86.185895,97.63575 L 98.483236,141.33353 V 54.61726 Z"
-     class="cls-2" />
-  <path
-     style="fill:#b2b2b2;fill-rule:evenodd;stroke-width:1.55992568"
-     id="path26"
-     d="M 184.70033,152.25301 A 86.903461,86.903461 0 1 1 98.483236,54.61726 v 86.76307 l 86.217094,10.91948 z"
-     class="cls-3" />
-  <path
-     style="fill:none;stroke:#ffffff;stroke-width:3.11985135px;stroke-linejoin:round"
+     class="cls-1"
+     d="M 95.41374,138.14332 149.33182,73.898535 A 83.87943,83.87943 0 1 1 31.16895,84.24068 81.178124,81.178124 0 0 1 95.41374,54.263894 Z"
      id="path28"
-     d="M 184.70033,152.25301 A 86.903461,86.903461 0 1 1 98.483236,54.61726 v 86.76307 l 86.217094,10.91948 z"
-     class="cls-2" />
+     inkscape:connector-curvature="0"
+     style="fill:#b2b2b2;stroke:#ffffff;stroke-width:3.08720756px;stroke-miterlimit:10" />
+  <path
+     class="cls-2"
+     d="M 95.41374,138.14332 V 54.263894 a 80.637863,80.637863 0 0 1 53.91808,19.634641 z"
+     id="path30"
+     inkscape:connector-curvature="0"
+     style="fill:#e0a500;stroke:#ffffff;stroke-width:3.08720756px;stroke-miterlimit:10" />
   <circle
-     style="fill:#ffffff;stroke-width:1.55992568"
-     id="circle30"
-     r="47.125355"
-     cy="141.38033"
-     cx="98.514435"
-     class="cls-4" />
+     class="cls-3"
+     cx="95.413742"
+     cy="138.14334"
+     r="46.632271"
+     id="circle32"
+     style="fill:#ffffff;stroke-width:1.54360378" />
   <text
-     y="147.52643"
-     x="72.744461"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';letter-spacing:0.03em;stroke-width:1.55992568;fill:#111111;fill-opacity:1"
-     id="text40"
-     class="cls-7">White</text>
-  <text
-     y="91.228714"
-     x="107.79599"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#ffffff;stroke-width:1.55992568"
+     class="cls-10"
      id="text42"
-     class="cls-5">27%</text>
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';letter-spacing:0px;fill:#111111;fill-opacity:1;stroke-width:1.54360378"
+     x="71.569511"
+     y="144.22513">White</text>
+  <text
+     class="cls-5"
+     id="text44"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#ffffff;stroke-width:1.54360378"
+     x="100.948"
+     y="85.645363">11%</text>
+  <text
+     class="cls-6"
+     id="text46"
+     style="font-size:18px;font-family:Interstate-Light, Interstate-Light;fill:#ffffff;stroke-width:1.54360378"
+     x="280.15225"
+     y="87.358765">54%</text>
   <path
-     style="fill:#e0a500;fill-rule:evenodd;stroke-width:1.55992568"
-     id="path44"
-     d="m 282.78846,59.983404 a 84.079995,84.079995 0 1 1 -20.9498,165.523716 l 20.9498,-81.44372 z"
-     class="cls-1" />
-  <path
-     style="fill:none;stroke:#ffffff;stroke-width:3.11985135px;stroke-linejoin:round"
-     id="path46"
-     d="m 282.78846,59.983404 a 84.079995,84.079995 0 1 1 -20.9498,165.523716 l 20.9498,-81.44372 z"
-     class="cls-2" />
-  <path
-     style="fill:#b2b2b2;fill-rule:evenodd;stroke-width:1.55992568"
+     class="cls-1"
+     d="m 281.78846,138.14332 83.67877,-5.85025 A 83.87943,83.87943 0 1 1 275.9382,54.464563 c 1.85233,-0.123488 3.99794,-0.200669 5.85026,-0.200669 z"
      id="path48"
-     d="M 261.83866,225.50712 A 84.064396,84.064396 0 0 1 282.78846,59.983404 V 144.0634 Z"
-     class="cls-3" />
+     inkscape:connector-curvature="0"
+     style="fill:#b2b2b2;stroke:#ffffff;stroke-width:3.08720756px;stroke-miterlimit:10" />
   <path
-     style="fill:none;stroke:#ffffff;stroke-width:3.11985135px;stroke-linejoin:round"
+     class="cls-2"
+     d="M 281.78846,138.14332 V 54.263894 a 83.354605,83.354605 0 0 1 83.67877,78.029176 z"
      id="path50"
-     d="M 261.83866,225.50712 A 84.064396,84.064396 0 0 1 282.78846,59.983404 V 144.0634 Z"
-     class="cls-2" />
+     inkscape:connector-curvature="0"
+     style="fill:#e0a500;stroke:#ffffff;stroke-width:3.08720756px;stroke-miterlimit:10" />
   <circle
-     style="fill:#ffffff;stroke-width:1.55992568"
+     class="cls-3"
+     cx="281.78845"
+     cy="138.14334"
+     r="46.632271"
      id="circle52"
-     r="47.125355"
-     cy="144.0634"
-     cx="282.77286"
-     class="cls-4" />
+     style="fill:#ffffff;stroke-width:1.54360378" />
   <text
-     y="150.2095"
-     x="260.07922"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#111111;fill-opacity:1;stroke-width:1.55992568"
+     class="cls-4"
      id="text54"
-     class="cls-6">Black</text>
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#111111;fill-opacity:1;stroke-width:1.54360378"
+     x="259.88541"
+     y="144.22513">Black</text>
   <text
-     y="92.088715"
-     x="288.35739"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#ffffff;stroke-width:1.55992568"
+     class="cls-5"
      id="text56"
-     class="cls-5">54%</text>
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#ffffff;stroke-width:1.54360378"
+     x="288.69711"
+     y="85.645363">24%</text>
   <path
-     style="fill:#e0a500;fill-rule:evenodd;stroke-width:1.55992568"
+     class="cls-1"
+     d="M 654.56878,138.14332 714.90825,79.872281 A 83.87943,83.87943 0 1 1 596.31317,77.803852 82.135158,82.135158 0 0 1 654.58422,54.263894 Z"
      id="path58"
-     d="m 652.84963,57.34713 a 85.405932,85.405932 0 0 1 77.41911,121.6742 l -77.41911,-36.37746 z"
-     class="cls-1" />
+     inkscape:connector-curvature="0"
+     style="fill:#b2b2b2;stroke:#ffffff;stroke-width:3.08720756px;stroke-miterlimit:10" />
   <path
-     style="fill:none;stroke:#ffffff;stroke-width:3.11985135px;stroke-linejoin:round"
+     class="cls-2"
+     d="M 654.56878,138.14332 V 54.263894 c 24.09566,0 43.60681,8.289153 60.33947,25.608387 z"
      id="path60"
-     d="m 652.84963,57.34713 a 85.405932,85.405932 0 0 1 77.41911,121.6742 l -77.41911,-36.37746 z"
-     class="cls-2" />
-  <path
-     style="fill:#b2b2b2;fill-rule:evenodd;stroke-width:1.55992568"
-     id="path62"
-     d="M 730.26874,179.02133 A 85.546325,85.546325 0 1 1 652.84963,57.34713 v 85.42153 z"
-     class="cls-3" />
-  <path
-     style="fill:none;stroke:#ffffff;stroke-width:3.11985135px;stroke-linejoin:round"
-     id="path64"
-     d="M 730.26874,179.02133 A 85.546325,85.546325 0 1 1 652.84963,57.34713 v 85.42153 z"
-     class="cls-2" />
+     inkscape:connector-curvature="0"
+     style="fill:#e0a500;stroke:#ffffff;stroke-width:3.08720756px;stroke-miterlimit:10" />
   <circle
-     style="fill:#ffffff;stroke-width:1.55992568"
-     id="circle66"
-     r="47.125355"
-     cy="142.70627"
-     cx="652.83405"
-     class="cls-4" />
+     class="cls-3"
+     cx="654.56879"
+     cy="138.14334"
+     r="46.632271"
+     id="circle62"
+     style="fill:#ffffff;stroke-width:1.54360378" />
   <text
-     y="148.85237"
-     x="627.81281"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';letter-spacing:0em;stroke-width:1.55992568;fill:#111111;fill-opacity:1"
-     id="text76"
-     class="cls-12">Asian</text>
+     class="cls-15"
+     id="text72"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';letter-spacing:0em;fill:#111111;fill-opacity:1;stroke-width:1.54360378"
+     x="632.06134"
+     y="144.22513">Asian</text>
   <text
-     y="91.228714"
-     x="662.27155"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#ffffff;stroke-width:1.55992568"
-     id="text78"
-     class="cls-5">32%</text>
-  <g
-     transform="translate(-5.3778116,-4.69214)"
-     id="g4648">
-    <g
-       id="g4640"
-       transform="translate(246.41257,-16.848725)">
-      <polygon
-         transform="matrix(1.0247652,0,0,1.2,-3.4331939,-54.971137)"
-         style="fill:#b2b2b2;fill-rule:evenodd"
-         id="polygon80"
-         points="150.34,83.76 138.63,83.76 138.63,73.76 150.34,73.76 "
-         class="cls-3" />
-      <text
-         y="46.120865"
-         x="155.16"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#555555;fill-opacity:1"
-         id="text82"
-         class="cls-15">Not in poverty</text>
-    </g>
-    <g
-       id="g4636"
-       transform="translate(266.42043,-16.848723)">
-      <polygon
-         transform="matrix(1.0247652,0,0,1.2,-317.47435,-54.971137)"
-         style="fill:#e0a500;fill-rule:evenodd"
-         id="polygon84"
-         points="287.34,83.76 275.63,83.76 275.63,73.76 287.34,73.76 "
-         class="cls-1" />
-      <text
-         y="45.540863"
-         x="-18.488323"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#555555;fill-opacity:1"
-         id="text86"
-         class="cls-15">In poverty</text>
-    </g>
-  </g>
+     class="cls-5"
+     id="text74"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#ffffff;stroke-width:1.54360378"
+     x="661.01227"
+     y="85.645363">13%</text>
 </svg>
