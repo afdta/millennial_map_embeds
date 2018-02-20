@@ -31,7 +31,7 @@ function main(){
           var thiz = d3.select(this);
           var wrap = thiz.select(".map-container");
           wrap.select("p.map-title").style("font-size","1.15rem").style("font-weight","bold")
-              .style("text-align","center").style("max-width","1000px").style("margin","0rem auto 1rem auto");
+              .style("text-align","center").style("max-width","1100px").style("margin","0rem auto 1rem auto");
           
           var button_wrap_outer = wrap.append("div").style("border","1px solid #aaaaaa")
                                       .style("border-width","1px 0px").style("margin","0px 0px 14px 0px");
@@ -39,7 +39,7 @@ function main(){
                                       .classed("button-panel c-fix", true);
           
           //var title = wrap.append("p");
-          var map_wrap = wrap.append("div").style("margin","0rem auto").style("max-width","1000px");
+          var map_wrap = wrap.append("div").style("margin","0rem auto").style("max-width","1100px");
 
           //version can be race or total
           var version = thiz.attr("id").search("race") > -1 ? "race" : "total";
