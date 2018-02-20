@@ -271,6 +271,53 @@
 }
 
 
+/*clearfix*/
+.c-fix:after{
+  content:""; 
+  display:table; 
+  clear:both;
+}
+
+
+/*findings-driven map container*/
+.metro-interactive .map-container{
+  padding:0rem 0rem;
+}
+
+.metro-interactive .map-container .button-panel{
+  border-bottom:0px solid #aaaaaa;
+  max-width:1200px;
+  /*display:table-row;*/
+}
+
+.metro-interactive .map-container .button-panel > div{
+  /*display: table-cell;*/
+  vertical-align: bottom;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid #ffffff;
+  border-radius:0px;
+  float:left;
+  width:23%;
+  margin:0% 1% 0% 1%;
+}
+
+.metro-interactive .map-container .button-panel > div.selected{
+  background-color:#555555;
+  border-color:#555555;
+  border-radius:0px;
+}
+
+.metro-interactive .map-container .button-panel > div.selected p{
+  color:#ffffff;
+}
+
+.metro-interactive .map-container .button-panel p{
+  user-select:none;
+  margin:0rem;
+  line-height:1.33em;
+}
+
 /*responsive styles*/
 @media (min-width:0px){
 
@@ -291,13 +338,16 @@
     margin:1rem 1rem;
     max-width:780px;
   }
+
+  .metro-interactive .map-container{
+    padding-left:0%;
+  }
 }
 
-@media (min-width:600px){
+@media (min-width:768px){
 
-  .metro-interactive .col-left{
-    margin:1rem 5rem;
-    max-width:780px;
+  .metro-interactive .map-container{
+    padding-left:10%;
   }
 
 }
@@ -328,56 +378,10 @@
   .metro-interactive div.col-center{padding:0rem 4rem;}
 }
 
+@media (min-width:1600px){
 
-@media (min-width:1240px){
+  .metro-interactive .map-container{
+    padding-left:5%;
+  }
 
 }
-
-
-/*clearfix*/
-.c-fix:after{
-  content:""; 
-  display:table; 
-  clear:both;
-}
-
-
-/*findings-driven map container*/
-.metro-interactive .map-container{
-  padding:0rem 0rem;
-}
-
-.metro-interactive .map-container .button-panel{
-  border-bottom:0px solid #aaaaaa;
-  max-width:1200px;
-  /*display:table-row;*/
-}
-
-.metro-interactive .map-container .button-panel > div{
-  /*display: table-cell;*/
-  vertical-align: bottom;
-  padding: 10px;
-  cursor: pointer;
-  border: 1px solid #ffffff;
-  border-radius:0px;
-  float:left;
-  width:23%;
-  margin-right:2%;
-}
-
-.metro-interactive .map-container .button-panel > div.selected{
-  background-color:#555555;
-  border-color:#555555;
-  border-radius:0px;
-}
-
-.metro-interactive .map-container .button-panel > div.selected p{
-  color:#ffffff;
-}
-
-.metro-interactive .map-container .button-panel p{
-  user-select:none;
-  margin:0rem;
-  line-height:1.33em;
-}
-
