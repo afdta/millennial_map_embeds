@@ -2858,9 +2858,17 @@ function main(){
         wraps.each(function(dd, ii){
 
           var thiz = d3.select(this);
-          var button_wrap = thiz.append("div");
-          var title = thiz.append("p");
-          var map_wrap = thiz.append("div").style("margin","0rem auto").style("max-width","1000px");
+          var wrap = thiz.select(".map-container");
+          wrap.select("p.map-title").style("font-size","1.15rem").style("font-weight","bold")
+              .style("text-align","center").style("max-width","1000px").style("margin","0rem auto 1rem auto");
+          
+          var button_wrap_outer = wrap.append("div").style("border","1px solid #aaaaaa")
+                                      .style("border-width","1px 0px").style("margin","0px 0px 14px 0px");
+          var button_wrap = button_wrap_outer.append("div").style("max-width","900px").style("margin","0rem auto")
+                                      .classed("button-panel c-fix", true);
+          
+          //var title = wrap.append("p");
+          var map_wrap = wrap.append("div").style("margin","0rem auto").style("max-width","1000px");
 
           //version can be race or total
           var version = thiz.attr("id").search("race") > -1 ? "race" : "total";
@@ -2889,9 +2897,13 @@ function main(){
 
 
           //render map to div below map
-          var legend_wrap = map_wrap.append("div").style("margin","0.5rem auto 0.25rem auto").classed("c-fix",true)
-                                    .append("div").style("float","right").style("border-top","1px solid #aaaaaa")
-                                    .style("padding","10px").classed("map-legend",true); 
+          var legend_outer_wrap = map_wrap.append("div").style("margin","2px auto 0.5rem auto").classed("c-fix",true)
+                                    .append("div").style("float","right");
+          
+          var title = legend_outer_wrap.append("p").style("line-height","1em").style("margin","0px 10px 7px 10px");
+
+          var legend_wrap = legend_outer_wrap.append("div").style("border-top","1px solid #aaaaaa")
+                                      .style("padding","5px 10px 5px 10px").classed("map-legend",true); 
 
           var pal = ['#c6dbef','#9ecae1','#6baed6','#3182bd','#08519c'];
 
@@ -2919,6 +2931,7 @@ function main(){
             }; //end map_scenes
 
             var map_buttons = null;
+            button_wrap_outer.style("display","none");
             var initial_var = "pop";
           
           } //end version==total block
@@ -3017,8 +3030,7 @@ function main(){
           var tooltip = function(obs){
             var tip = d3.select(this);
 
-            if(tip_code !== obs.CBSA_Code || draw_count < 2){
-              console.log("draw tooltip");
+            if(tip_code !== obs.CBSA_Code || draw_count < 1){
 
               var p = tip.selectAll("p").data(['<strong style="font-size:17px;">' + obs.CBSA_Title + '</strong>', 
                                                '<em>Millennial share: ' + format.num1(obs.MShare15) + '% of pop.</em>',
@@ -3070,7 +3082,7 @@ function main(){
             }
 
             var scene = map_scenes[d];
-            title.html(scene.varname).style("text-align","center").style("margin","1.5rem 0px 0px 0px").style("font-weight","bold");
+            title.html(scene.varname); //.style("font-weight","bold");
             map_var = scene.var;
 
             scene.draw();
